@@ -513,8 +513,8 @@ a:hover, a:focus {
                         <h3>Car Rental Management Website ("ZoomRentals")</h3>
                         <p>Constructed a robust car rental website featuring dynamic listing, booking, and comprehensive admin management features, proving ability to handle complex data and secure administrative interfaces.</p>
                         <ul>
-                            <li>**Tech Stack:** HTML, PHP, MySQL</li>
-                            <li>**Achievement:** Implemented reliable backend logic for data persistence and user session management.</li>
+                            <li>Tech Stack:HTML, PHP, MySQL</li>
+                            <li>Achievement:Implemented reliable backend logic for data persistence and user session management.</li>
                         </ul>
                     </div>
                 </div>
@@ -535,7 +535,7 @@ a:hover, a:focus {
                         <div class="entry-company">Self-initiated Project | Pusa, Sarawak</div>
                         <div class="entry-description">
                             <ul>
-                                <li>**Sales Success:Generated RM300 in sales within just three days by selling unused SPM notebooks, demonstrating entrepreneurial drive.</li>
+                                <li>Sales Success:Generated RM300 in sales within just three days by selling unused SPM notebooks, demonstrating entrepreneurial drive.</li>
                                 <li>Commercial Skills:Successfully applied negotiation, persuasive communication, and basic market pricing strategies to interact with customers and close sales.</li>
                             </ul>
                         </div>
@@ -548,7 +548,7 @@ a:hover, a:focus {
                         <div class="entry-company">Freelance/Part-time | Pusa, Sarawak</div>
                         <div class="entry-description">
                             <ul>
-                                <li>**Teamwork in High-Pressure:** Collaborated effectively in fast-paced event environments to ensure timely delivery and service quality.</li>
+                                <li>Teamwork in High-Pressure:Collaborated effectively in fast-paced event environments to ensure timely delivery and service quality.</li>
                                 <li>Attention to Detail:Maintained strict hygiene and safety standards during food preparation and service operations.</li>
                             </ul>
                         </div>
