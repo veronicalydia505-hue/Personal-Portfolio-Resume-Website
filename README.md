@@ -533,10 +533,10 @@ a:hover, a:focus {
                     <div class="skill-group">
                         <h4><i class="fas fa-code"></i> Core Development</h4>
                         <ul class="skill-list">
-                            <li>Java (Backend Logic, OOP)</li>
-                            <li>Python (Scripting, Data Handling)</li>
+                            <li>Java(Backend Logic, OOP)</li>
+                            <li>Python(Scripting, Data Handling)</li>
                             <li>HTML5, CSS3, JavaScript</li>
-                            <li>C / C++ / Kotlin Fundamentals</li>
+                            <li>C/ C++/ Kotlin Fundamentals</li>
                         </ul>
                     </div>
                     <div class="skill-group">
