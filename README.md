@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +8,7 @@
     <!-- Font Awesome for icons (used in contact, skills, and theme toggle) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* * ======================================================
+        /* ======================================================
          * 1. CSS Variables & Theming Setup
          * ======================================================
          */
@@ -23,8 +22,7 @@
             --border-color: #f8bbd0; /* Soft border color */
             --shadow-color: rgba(233, 30, 99, 0.15); /* Pink shadow */
         }
-        
-  /* Dark Mode Override when 'dark-mode' class is applied to body */
+        /* Dark Mode Override when 'dark-mode' class is applied to body */
         body.dark-mode {
             --primary-color: #ff80ab;
             --text-color: #f0f0f0;
@@ -34,11 +32,12 @@
             --border-color: #3c3c3c;
             --shadow-color: rgba(255, 255, 255, 0.05);
         }
-/* * ======================================================
+		/* ======================================================
          * 2. Base & Utility Styles
          * ======================================================
          */
-        * {
+        /* Note: The universal selector was removed as per user request. */
+        html, body {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -67,12 +66,12 @@ a:hover, a:focus {
             outline: 2px solid var(--primary-color);
             outline-offset: 3px;
         }
-.container {
+		.container {
             max-width: 1100px; 
             margin: 0 auto;
             padding: 0 1.5rem;
         }
-.section {
+		.section {
             padding: 7rem 0; 
             border-bottom: 1px solid var(--border-color);
             background-color: var(--background-color);
@@ -84,7 +83,6 @@ a:hover, a:focus {
         .section:last-of-type {
             border-bottom: none;
         }
-
 .section-title {
             font-size: 2.8rem;
             margin-bottom: 4rem;
@@ -94,7 +92,7 @@ a:hover, a:focus {
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-        /* * ======================================================
+        /* ======================================================
          * 3. Header & Navigation Styles
          * ======================================================
          */
@@ -112,14 +110,12 @@ a:hover, a:focus {
             height: 65px;
             position: relative;
         }
-
-  .nav-list {
+.nav-list {
             list-style: none;
             display: flex;
             gap: 2rem;
         }
-
-  .nav-link {
+		.nav-link {
             font-weight: 700;
             padding: 0.5rem 0;
             color: var(--text-color);
@@ -128,8 +124,7 @@ a:hover, a:focus {
             letter-spacing: 0.5px;
             transition: color 0.3s;
         }
-        
-  .theme-toggle {
+        .theme-toggle {
             position: absolute;
             right: 1.5rem;
             cursor: pointer;
@@ -139,7 +134,7 @@ a:hover, a:focus {
             color: var(--text-color);
             transition: transform 0.2s, color 0.3s;
         }
-        /* * ======================================================
+        /* ======================================================
          * 4. Home (Hero) Section Styles
          * ======================================================
          */
@@ -196,12 +191,11 @@ a:hover, a:focus {
              background-color: #C2185B; 
              transform: translateY(-2px);
         }
-
-  /* * ======================================================
+/* ======================================================
          * 5. Section Specific Styles
          * ======================================================
          */
-         /* About Section */
+        /* About Section */
         #about p {
             max-width: 800px;
             margin: 0 auto 1.5rem auto;
@@ -210,7 +204,7 @@ a:hover, a:focus {
             color: #495057; 
         }
 
-  /* Experience Section (Timeline/List structure) */
+/* Experience Section (Timeline/List structure) */
         .experience-entry {
             margin-bottom: 3.5rem;
             padding-bottom: 2.5rem;
@@ -220,14 +214,12 @@ a:hover, a:focus {
             gap: 3rem;
             align-items: flex-start;
         }
-        
-  .experience-entry:last-child {
+        .experience-entry:last-child {
             border-bottom: none;
             margin-bottom: 0;
             padding-bottom: 0;
         }
-
-  .entry-date {
+.entry-date {
             font-size: 1rem;
             font-weight: 700;
             color: var(--primary-color);
@@ -235,39 +227,33 @@ a:hover, a:focus {
             padding-top: 0.25rem;
             text-align: right; 
         }
-        
-  .entry-details {
+        .entry-details {
              border-left: 3px solid var(--primary-color);
              padding-left: 2rem;
         }
-
-  .entry-title {
+.entry-title {
             font-size: 1.6rem;
             font-weight: 800;
             margin-bottom: 0.25rem;
         }
-        
-  .entry-company {
+        .entry-company {
             font-size: 1.1rem;
             font-weight: 500;
             color: #6c757d;
             margin-bottom: 1rem;
         }
-
-  .entry-description ul {
+.entry-description ul {
             list-style: none;
             padding-left: 0;
             margin-top: 0.5rem;
             font-size: 1rem;
         }
-        
-  .entry-description li {
+        .entry-description li {
             position: relative;
             margin-bottom: 0.7rem;
             padding-left: 1.5rem;
         }
-        
-  .entry-description li::before {
+        .entry-description li::before {
             content: '•';
             position: absolute;
             left: 0;
@@ -275,8 +261,7 @@ a:hover, a:focus {
             font-weight: 900;
             color: var(--primary-color);
         }
-
-  /* Projects Section (Grid Layout) */
+/* Projects Section (Grid Layout) */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -284,8 +269,7 @@ a:hover, a:focus {
             max-width: 100%;
             margin: 0 auto;
         }
-
-  .project-card {
+.project-card {
             background-color: var(--card-color);
             padding: 2.5rem;
             border-radius: 10px;
@@ -293,13 +277,11 @@ a:hover, a:focus {
             border: 1px solid var(--border-color);
             transition: box-shadow 0.3s, transform 0.3s;
         }
-
-  .project-card:hover {
+.project-card:hover {
             box-shadow: 0 15px 30px var(--shadow-color);
             transform: translateY(-8px);
         }
-        
-  .tech-stack-label {
+        .tech-stack-label {
             display: inline-block;
             background-color: var(--primary-color);
             color: white;
@@ -310,45 +292,38 @@ a:hover, a:focus {
             margin-bottom: 1rem;
             text-transform: uppercase;
         }
-
-  .project-card h3 {
+.project-card h3 {
             font-size: 1.8rem;
             margin-bottom: 0.6rem;
             color: var(--text-color);
             font-weight: 800;
         }
-
-  .project-card p {
+.project-card p {
             margin-bottom: 1.5rem;
             color: #495057;
         }
-        
-   /* Skills & Courses Section */
+        /* Skills & Courses Section */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
             text-align: center;
         }
-
-  .skill-group h4 {
+.skill-group h4 {
             font-size: 1.4rem;
             color: var(--primary-color);
             margin-bottom: 1rem;
             font-weight: 700;
         }
-
-  .skill-list {
+.skill-list {
             list-style: none;
             padding: 0;
             line-height: 2;
         }
-
-  #key-courses {
+ #key-courses {
             padding-top: 4rem;
         }
-
-  .course-list {
+.course-list {
             list-style: none;
             display: flex;
             flex-wrap: wrap;
@@ -356,8 +331,7 @@ a:hover, a:focus {
             gap: 1rem;
             margin-top: 3rem;
         }
-
-  .course-list li {
+.course-list li {
             background-color: var(--primary-color);
             color: white;
             padding: 0.8rem 1.5rem;
@@ -366,8 +340,7 @@ a:hover, a:focus {
             font-size: 1rem;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
-
- /* Contact Section */
+/* Contact Section */
         .contact-info-container {
             max-width: 600px;
             margin: 0 auto;
@@ -378,8 +351,7 @@ a:hover, a:focus {
             padding: 0;
             margin-top: 3rem;
         }
-        
-  .contact-list li {
+        .contact-list li {
             margin-bottom: 1.5rem;
             font-size: 1.5rem;
             font-weight: 600;
@@ -388,19 +360,16 @@ a:hover, a:focus {
             justify-content: center;
             gap: 1rem;
         }
-        
-  .contact-icon {
+        .contact-icon {
             color: var(--primary-color);
             font-size: 1.8rem;
         }
-        
-  .references-note {
+        .references-note {
             margin-top: 3rem;
             font-style: italic;
             color: #6c757d;
         }
-
-  /* * ======================================================
+/* ======================================================
          * 6. Footer & Responsiveness
          * ======================================================
          */
@@ -411,20 +380,17 @@ a:hover, a:focus {
             color: #6c757d;
             background-color: var(--background-color);
         }
-
-  /* Media Queries for Responsiveness */
+/* Media Queries for Responsiveness */
         @media (max-width: 767px) {
             .hero-title { font-size: 3rem; }
             .hero-subtitle { font-size: 1.2rem; }
             .section { padding: 4rem 0; }
-            
-  .experience-entry {
+            .experience-entry {
                  grid-template-columns: 1fr; /* Stack on mobile */
             }
             .entry-date { margin-bottom: 1rem; text-align: left; }
             .entry-details { border-left: none; padding-left: 0; }
-            
-  .skills-grid, .projects-grid { grid-template-columns: 1fr; }
+            .skills-grid, .projects-grid { grid-template-columns: 1fr; }
             .nav-list { gap: 1rem; }
             .theme-toggle { right: 0.5rem; }
             .nav { height: auto; padding: 1rem 0; }
@@ -434,7 +400,7 @@ a:hover, a:focus {
     </style>
 </head>
 <body>
-<!-- ====================================================== -->
+	<!-- ====================================================== -->
     <!-- PRIMARY NAVIGATION (Sticky Header) -->
     <!-- ====================================================== -->
     <header class="header">
@@ -476,10 +442,10 @@ a:hover, a:focus {
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title">Career Profile</h2>
-                <p>I am a third-year student at UNIMAS, driven to bridge design and functionality. My academic focus on Human-Computer Interaction (HCI) and UI/UX Design (Figma) complements a solid foundation in core development languages like Java and Python.</p>
+                <p>I am third-year student at UNIMAS, driven to bridge design and functionality. My academic focus on Human-Computer Interaction (HCI) and UI/UX Design (Figma) complements a solid foundation in core development languages like Java and Python.</p>
             </div>
         </section>
-      <!-- ====================================================== -->
+        <!-- ====================================================== -->
         <!-- SECTION: PROJECTS (TECHNICAL SHOWCASE) -->
         <!-- Focus: Hard Skills & Deliverables -->
         <!-- ====================================================== -->
@@ -504,7 +470,7 @@ a:hover, a:focus {
                         <p>Designed and built a functional web application providing educational content and interactive self-assessment quizzes related to mental well-being, demonstrating end-to-end development capabilities.</p>
                         <ul>
                             <li>Tech Stack: Java, HTML, CSS, MySQL</li>
-                            <li>Achievement:Managed database operations (MySQL) and designed responsive, engaging user interfaces.</li>
+                            <li>Achievement: Managed database operations (MySQL) and designed responsive, engaging user interfaces.</li>
                         </ul>
                     </div>
                     <!-- Project 3: Car Rental Management Website -->
@@ -513,8 +479,8 @@ a:hover, a:focus {
                         <h3>Car Rental Management Website ("ZoomRentals")</h3>
                         <p>Constructed a robust car rental website featuring dynamic listing, booking, and comprehensive admin management features, proving ability to handle complex data and secure administrative interfaces.</p>
                         <ul>
-                            <li>Tech Stack:HTML, PHP, MySQL</li>
-                            <li>Achievement:Implemented reliable backend logic for data persistence and user session management.</li>
+                            <li>Tech Stack: HTML, PHP, MySQL</li>
+                            <li>Achievement: Implemented reliable backend logic for data persistence and user session management.</li>
                         </ul>
                     </div>
                 </div>
@@ -528,15 +494,15 @@ a:hover, a:focus {
             <div class="container">
                 <h2 class="section-title">Professional & Commercial Experience</h2>
 
-  <div class="experience-entry">
+<div class="experience-entry">
                     <div class="entry-date">2023</div>
                     <div class="entry-details">
                         <div class="entry-title">Book Reseller</div>
                         <div class="entry-company">Self-initiated Project | Pusa, Sarawak</div>
                         <div class="entry-description">
                             <ul>
-                                <li>Sales Success:Generated RM300 in sales within just three days by selling unused SPM notebooks, demonstrating entrepreneurial drive.</li>
-                                <li>Commercial Skills:Successfully applied negotiation, persuasive communication, and basic market pricing strategies to interact with customers and close sales.</li>
+                                <li>Sales Success: Generated RM300 in sales within just three days by selling unused SPM notebooks, demonstrating entrepreneurial drive.</li>
+                                <li>Commercial Skills: Successfully applied negotiation, persuasive communication, and basic market pricing strategies to interact with customers and close sales.</li>
                             </ul>
                         </div>
                     </div>
@@ -548,15 +514,14 @@ a:hover, a:focus {
                         <div class="entry-company">Freelance/Part-time | Pusa, Sarawak</div>
                         <div class="entry-description">
                             <ul>
-                                <li>Teamwork in High-Pressure:Collaborated effectively in fast-paced event environments to ensure timely delivery and service quality.</li>
-                                <li>Attention to Detail:Maintained strict hygiene and safety standards during food preparation and service operations.</li>
+                                <li>Teamwork in High-Pressure: Collaborated effectively in fast-paced event environments to ensure timely delivery and service quality.</li>
+                                <li>Attention to Detail: Maintained strict hygiene and safety standards during food preparation and service operations.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
-  </div>
-						</section>
+                </div>
+        </section>
         <!-- ====================================================== -->
         <!-- SECTION: SKILLS & EDUCATION -->
         <!-- Focus: Tools, Languages, and Academic Depth -->
@@ -568,8 +533,8 @@ a:hover, a:focus {
                     <div class="skill-group">
                         <h4><i class="fas fa-code"></i> Core Development</h4>
                         <ul class="skill-list">
-                            <li>Java Backend Logic, OOP</li>
-                            <li>Python Scripting, Data Handling</li>
+                            <li>Java (Backend Logic, OOP)</li>
+                            <li>Python (Scripting, Data Handling)</li>
                             <li>HTML5, CSS3, JavaScript</li>
                             <li>C / C++ / Kotlin Fundamentals</li>
                         </ul>
@@ -577,7 +542,7 @@ a:hover, a:focus {
                     <div class="skill-group">
                         <h4><i class="fas fa-palette"></i> Design & Data</h4>
                         <ul class="skill-list">
-                            <li>**UI/UX Design** (Figma Expert)</li>
+                            <li>UI/UX Design (Figma Expert)</li>
                             <li>MySQL (Database Management)</li>
                             <li>Canva / Unity Hub</li>
                             <li>System Analysis & Design (SAD)</li>
@@ -637,12 +602,12 @@ a:hover, a:focus {
             </div>
         </section>
     </main>
-<!-- ====================================================== -->
+	<!-- ====================================================== -->
     <!-- FOOTER -->
     <!-- ====================================================== -->
     <footer class="footer">
         <div class="container">
-            &copy; 2025 Nurul Hidayu Bt Suut. All rights reserved. | Built by Veronica Lydia .
+            &copy; 2025 Nurul Hidayu Bt Suut. All rights reserved. | Built by Veronica Lydia.
         </div>
     </footer>
 <!-- ====================================================== -->
@@ -653,6 +618,7 @@ a:hover, a:focus {
         document.addEventListener('DOMContentLoaded', function() {
             // Helper function to safely query elements
             const $ = selector => document.querySelector(selector);
+
 // --- 1. Smooth Scrolling Implementation ---
             const smoothScrollLinks = document.querySelectorAll('.smooth-scroll');
             smoothScrollLinks.forEach(anchor => {
@@ -665,6 +631,7 @@ a:hover, a:focus {
                     }
                 });
             });
+
 // --- 2. Dark/Light Theme Toggle Logic ---
             const body = document.body;
             const themeToggleBtn = $('#theme-toggle');
@@ -693,7 +660,7 @@ a:hover, a:focus {
                 const savedTheme = localStorage.getItem(THEME_KEY);
                 const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
                 
-  // If a theme is saved, use it. Otherwise, check OS preference (prefersDark)
+// If a theme is saved, use it. Otherwise, check OS preference (prefersDark)
                 if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
                     setTheme(true);
                 } else {
@@ -701,7 +668,7 @@ a:hover, a:focus {
                 }
             }
 
-  // Event Listener for the button click
+// Event Listener for the button click
             if (themeToggleBtn) {
                 themeToggleBtn.addEventListener('click', () => {
                     const isCurrentlyDark = body.classList.contains('dark-mode');
@@ -709,6 +676,12 @@ a:hover, a:focus {
                 });
             }
 
+// Run initialization
+            initializeTheme();
+        });
+    </script>
+</body>
+</html>
   // Run initialization
             initializeTheme();
         });
