@@ -362,7 +362,7 @@ a:hover, a:focus {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            height: 150px; /* Make it a square card */
+            height: 200px; /* Make it a square card */
         }
 .skill-square-card:hover {
             transform: translateY(-5px);
