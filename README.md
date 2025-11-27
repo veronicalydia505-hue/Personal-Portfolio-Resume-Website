@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -465,7 +465,7 @@ a:hover, a:focus {
                     NH
                 </div>
                 <h1 class="hero-title">I'm <span>Nurul Hidayu</span>.</h1>
-                <p class="hero-subtitle">Multimedia Computing Student | UI/UX & Java Specialist | Seeking Tech Internship</p>
+                <p class="hero-subtitle">Multimedia Computing Student | UI/UX & Java Specialist </p>
                 <a href="#projects" class="hero-cta smooth-scroll">View Portfolio</a>
             </div>
         </section>
@@ -476,8 +476,7 @@ a:hover, a:focus {
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title">Career Profile</h2>
-                <p>I am a fast-learning, creative third-year student at UNIMAS, driven to bridge design and functionality. My academic focus on **Human-Computer Interaction (HCI)** and **UI/UX Design (Figma)** complements a solid foundation in core development languages like **Java** and **Python**.</p>
-                <p>I am seeking a challenging internship, ideally at Sarawak Energy or a related tech firm, to leverage my full-stack mindset. I thrive in team environments, committed to delivering user-centric solutions that meet both technical requirements and real-world business goals.</p>
+                <p>I am a third-year student at UNIMAS, driven to bridge design and functionality. My academic focus on Human-Computer Interaction (HCI) and UI/UX Design (Figma) complements a solid foundation in core development languages like Java and Python.</p>
             </div>
         </section>
       <!-- ====================================================== -->
@@ -494,8 +493,8 @@ a:hover, a:focus {
                         <h3>ART Mobile App Prototype (Sarawak Metro)</h3>
                         <p>Developed a high-fidelity mobile application prototype for the Autonomous Rapid Transit (ART) system in Sarawak. This project focused on creating intuitive user flows for ticket purchasing, route planning, and real-time transit tracking.</p>
                         <ul>
-                            <li>**Tool Used:** Figma (High-Fidelity Prototyping)</li>
-                            <li>**Achievement:** Applied usability testing feedback to significantly refine navigation and interface accessibility.</li>
+                            <li>Tool Used: Figma (High-Fidelity Prototyping)</li>
+                            <li>Achievement: Applied usability testing feedback to significantly refine navigation and interface accessibility.</li>
                         </ul>
                     </div>
 <!-- Project 2: Mental Health Awareness Web App -->
@@ -504,8 +503,8 @@ a:hover, a:focus {
                         <h3>Mental Health Awareness Web Application</h3>
                         <p>Designed and built a functional web application providing educational content and interactive self-assessment quizzes related to mental well-being, demonstrating end-to-end development capabilities.</p>
                         <ul>
-                            <li>**Tech Stack:** Java, HTML, CSS, MySQL</li>
-                            <li>**Achievement:** Managed database operations (MySQL) and designed responsive, engaging user interfaces.</li>
+                            <li>Tech Stack: Java, HTML, CSS, MySQL</li>
+                            <li>Achievement:Managed database operations (MySQL) and designed responsive, engaging user interfaces.</li>
                         </ul>
                     </div>
                     <!-- Project 3: Car Rental Management Website -->
@@ -536,8 +535,8 @@ a:hover, a:focus {
                         <div class="entry-company">Self-initiated Project | Pusa, Sarawak</div>
                         <div class="entry-description">
                             <ul>
-                                <li>**Sales Success:** Generated **RM300 in sales** within just three days by selling unused SPM notebooks, demonstrating entrepreneurial drive.</li>
-                                <li>**Commercial Skills:** Successfully applied negotiation, persuasive communication, and basic market pricing strategies to interact with customers and close sales.</li>
+                                <li>**Sales Success:Generated RM300 in sales within just three days by selling unused SPM notebooks, demonstrating entrepreneurial drive.</li>
+                                <li>Commercial Skills:Successfully applied negotiation, persuasive communication, and basic market pricing strategies to interact with customers and close sales.</li>
                             </ul>
                         </div>
                     </div>
@@ -550,7 +549,7 @@ a:hover, a:focus {
                         <div class="entry-description">
                             <ul>
                                 <li>**Teamwork in High-Pressure:** Collaborated effectively in fast-paced event environments to ensure timely delivery and service quality.</li>
-                                <li>**Attention to Detail:** Maintained strict hygiene and safety standards during food preparation and service operations.</li>
+                                <li>Attention to Detail:Maintained strict hygiene and safety standards during food preparation and service operations.</li>
                             </ul>
                         </div>
                     </div>
@@ -569,8 +568,8 @@ a:hover, a:focus {
                     <div class="skill-group">
                         <h4><i class="fas fa-code"></i> Core Development</h4>
                         <ul class="skill-list">
-                            <li>**Java** (Backend Logic, OOP)</li>
-                            <li>**Python** (Scripting, Data Handling)</li>
+                            <li>Java Backend Logic, OOP</li>
+                            <li>Python Scripting, Data Handling</li>
                             <li>HTML5, CSS3, JavaScript</li>
                             <li>C / C++ / Kotlin Fundamentals</li>
                         </ul>
@@ -643,7 +642,7 @@ a:hover, a:focus {
     <!-- ====================================================== -->
     <footer class="footer">
         <div class="container">
-            &copy; 2024 Nurul Hidayu Bt Suut. All rights reserved. | Built with humanized code.
+            &copy; 2025 Nurul Hidayu Bt Suut. All rights reserved. | Built by Veronica Lydia .
         </div>
     </footer>
 <!-- ====================================================== -->
