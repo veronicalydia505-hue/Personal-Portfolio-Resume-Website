@@ -542,7 +542,7 @@ a:hover, a:focus {
                     <div class="skill-group">
                         <h4><i class="fas fa-palette"></i> Design & Data</h4>
                         <ul class="skill-list">
-                            <li>UI/UX Design (Figma Expert)</li>
+                            <li> UI/UX Design Figma Expert </li>
                             <li>MySQL (Database Management)</li>
                             <li>Canva / Unity Hub</li>
                             <li>System Analysis & Design (SAD)</li>
