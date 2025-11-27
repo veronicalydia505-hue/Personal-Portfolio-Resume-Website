@@ -788,7 +788,7 @@ a:hover, a:focus {
                     </form>
                     <div class="contact-info-block">
                         <h3>Contact Info</h3>
-                        <p style="color: var(--text-secondary);">I am available for internship interviews and eager to join a dynamic team in Sarawak.</p>
+                        <p style="color: var(--text-secondary);">I am available for hire </p>
                         <ul>
                             <li><i class="fas fa-map-marker-alt"></i> Kuching, Sarawak, Malaysia</li>
                             <li><i class="fas fa-phone"></i> +60 193375235</li>
