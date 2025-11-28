@@ -33,7 +33,6 @@ body {
             margin: 0 auto;
             padding: 0 20px;
         }
-
 /* Header Styles */
         header {
             background-color: rgba(17, 24, 39, 0.95);
@@ -58,8 +57,7 @@ body {
         }
 .logo span {
             color: var(--primary);
-        }
-.nav-links {
+        }.nav-links {
             display: flex;
             list-style: none;
         }
@@ -94,7 +92,7 @@ body {
             cursor: pointer;
             color: var(--light);
         }
- /* Hero Section */
+/* Hero Section */
         .hero {
             padding: 150px 0 100px;
             background: linear-gradient(135deg, var(--darker) 0%, var(--dark) 100%);
@@ -120,6 +118,7 @@ body {
             flex: 1;
             padding-right: 50px;
         }
+
 .hero-text h1 {
             font-size: 48px;
             font-weight: 700;
@@ -158,6 +157,23 @@ body {
             background-color: var(--primary-dark);
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4);
+        }
+.btn-edit {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-left: 15px;
+        }
+.btn-edit:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
         }
 .hero-image {
             flex: 1;
@@ -225,7 +241,7 @@ body {
             margin-right: 10px;
             color: var(--primary);
         }
- @keyframes float {
+@keyframes float {
             0% {
                 transform: translateY(0);
             }
@@ -236,7 +252,7 @@ body {
                 transform: translateY(0);
             }
         }
- /* About Section */
+/* About Section */
         .about {
             padding: 100px 0;
             background-color: var(--dark);
@@ -254,6 +270,9 @@ body {
 .section-title {
             text-align: center;
             margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 .section-title h2 {
             font-size: 36px;
@@ -270,6 +289,7 @@ body {
             align-items: center;
             gap: 50px;
         }
+
 .about-text {
             flex: 1;
         }
@@ -308,24 +328,25 @@ body {
 .stat p {
             color: var(--gray);
             font-weight: 500;
-        }.about-image {
+        }
+.about-image {
             flex: 1;
             text-align: center;
         }
- .about-image img {
+.about-image img {
             width: 100%;
             max-width: 400px;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(236, 72, 153, 0.1);
         }
-/* Services Section */
-        .services {
+/* Skills Section */
+        .skills {
             padding: 100px 0;
             background-color: var(--darker);
             position: relative;
         }
-.services::before {
+.skills::before {
             content: '';
             position: absolute;
             top: 0;
@@ -334,11 +355,12 @@ body {
             height: 100%;
             background: radial-gradient(circle at 20% 80%, rgba(236, 72, 153, 0.05) 0%, transparent 50%);
         }
-.services-grid {
+.skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-        }.service-card {
+        }
+.skill-card {
             background-color: rgba(17, 24, 39, 0.5);
             padding: 40px 30px;
             border-radius: 10px;
@@ -348,12 +370,12 @@ body {
             border: 1px solid rgba(236, 72, 153, 0.1);
             backdrop-filter: blur(10px);
         }
-.service-card:hover {
+.skill-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(236, 72, 153, 0.1);
             border-color: rgba(236, 72, 153, 0.3);
         }
- .service-icon {
+.skill-icon {
             width: 70px;
             height: 70px;
             background-color: rgba(236, 72, 153, 0.1);
@@ -364,23 +386,99 @@ body {
             margin: 0 auto 20px;
             border: 1px solid rgba(236, 72, 153, 0.2);
         }
-.service-icon i {
+.skill-icon i {
             font-size: 30px;
             color: var(--primary);
         }
-
-.service-card h3 {
+.skill-card h3 {
             font-size: 22px;
             margin-bottom: 15px;
             color: var(--light);
         }
-.service-card p {
+.skill-card ul {
+            list-style: none;
+            text-align: left;
             color: var(--gray);
         }
-        /* Portfolio Section */
-        .portfolio {
+.skill-card li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+.skill-card li:before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+/* Tools Section */
+        .tools {
             padding: 100px 0;
             background-color: var(--dark);
+            position: relative;
+        }
+.tools::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.05) 0%, transparent 50%);
+        }
+.tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+.tool-card {
+            background-color: rgba(17, 24, 39, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+            text-align: center;
+            border: 1px solid rgba(236, 72, 153, 0.1);
+            backdrop-filter: blur(10px);
+        }
+.tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(236, 72, 153, 0.1);
+            border-color: rgba(236, 72, 153, 0.3);
+        }
+.tool-icon {
+            font-size: 48px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+.tool-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--light);
+        }
+
+.progress-bar {
+            height: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+.progress {
+            height: 100%;
+            background-color: var(--primary);
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+        }
+.percentage {
+            font-size: 14px;
+            color: var(--gray);
+            font-weight: 600;
+        }
+/* Portfolio Section */
+        .portfolio {
+            padding: 100px 0;
+            background-color: var(--darker);
             position: relative;
         }
 .portfolio::before {
@@ -390,28 +488,7 @@ body {
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.05) 0%, transparent 50%);
-        }
-.portfolio-filter {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-        }
-.filter-btn {
-            padding: 8px 20px;
-            margin: 0 5px 10px;
-            background-color: transparent;
-            border: 1px solid var(--gray);
-            border-radius: 30px;
-            color: var(--gray);
-            cursor: pointer;
-            transition: var(--transition);
-        }
-.filter-btn.active, .filter-btn:hover {
-            background-color: var(--primary);
-            border-color: var(--primary);
-            color: white;
+            background: radial-gradient(circle at 20% 80%, rgba(236, 72, 153, 0.05) 0%, transparent 50%);
         }
 .portfolio-grid {
             display: grid;
@@ -460,10 +537,24 @@ body {
             color: rgba(255, 255, 255, 0.8);
             font-size: 14px;
         }
+.tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+.tech-tag {
+            background-color: rgba(236, 72, 153, 0.2);
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
 /* Contact Section */
         .contact {
             padding: 100px 0;
-            background-color: var(--darker);
+            background-color: var(--dark);
             position: relative;
         }
 .contact::before {
@@ -473,13 +564,12 @@ body {
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 20% 80%, rgba(236, 72, 153, 0.05) 0%, transparent 50%);
+            background: radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.05) 0%, transparent 50%);
         }
 .contact-content {
             display: flex;
             gap: 50px;
-        }
-.contact-info {
+        }.contact-info {
             flex: 1;
         }
 .contact-info h3 {
@@ -538,9 +628,9 @@ textarea.form-control {
 .form-control::placeholder {
             color: var(--gray);
         }
-/* Footer */
+ /* Footer */
         footer {
-            background-color: var(--dark);
+            background-color: var(--darker);
             color: white;
             padding: 50px 0 20px;
             border-top: 1px solid rgba(236, 72, 153, 0.1);
@@ -600,6 +690,63 @@ textarea.form-control {
             color: rgba(255, 255, 255, 0.7);
             font-size: 14px;
         }
+/* Edit Modal */
+        .edit-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+.edit-modal-content {
+            background-color: var(--dark);
+            padding: 2rem;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            border: 1px solid rgba(236, 72, 153, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+.edit-modal h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: var(--light);
+            border-bottom: 1px solid rgba(236, 72, 153, 0.2);
+            padding-bottom: 10px;
+        }
+.edit-textarea {
+            width: 100%;
+            min-height: 150px;
+            background-color: rgba(17, 24, 39, 0.5);
+            color: var(--light);
+            border: 1px solid rgba(236, 72, 153, 0.2);
+            border-radius: 5px;
+            padding: 12px;
+            margin-bottom: 1rem;
+            resize: vertical;
+        }
+.edit-input {
+            width: 100%;
+            background-color: rgba(17, 24, 39, 0.5);
+            color: var(--light);
+            border: 1px solid rgba(236, 72, 153, 0.2);
+            border-radius: 5px;
+            padding: 12px;
+            margin-bottom: 1rem;
+        }
+ .edit-modal-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 20px;
+        }
 /* Responsive Styles */
         @media (max-width: 992px) {
             .hero-content {
@@ -613,8 +760,7 @@ textarea.form-control {
             .about-content {
                 flex-direction: column;
             }
-            
-.contact-content {
+            .contact-content {
                 flex-direction: column;
             }
         }
@@ -637,7 +783,7 @@ textarea.form-control {
             .nav-links li {
                 margin: 10px 0;
             }
-            .mobile-menu {
+             .mobile-menu {
                 display: block;
             }
             .hero-text h1 {
@@ -658,9 +804,16 @@ textarea.form-control {
                 flex-direction: column;
                 gap: 15px;
             }
-            
-.stat {
+            .stat {
                 margin: 0;
+            }
+            .section-title {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+.btn-edit {
+                margin-left: 0;
             }
         }
     </style>
@@ -674,7 +827,8 @@ textarea.form-control {
                 <ul class="nav-links">
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About Me</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#tools">Tools</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -690,13 +844,13 @@ textarea.form-control {
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Hello, I'm <span>Nurul Hidayu</span></h1>
-                    <h2>A Professional UI/UX Designer</h2>
-                    <p>I create beautiful, functional, and user-centered digital experiences. With a passion for clean design and seamless interactions.</p>
-                    <a href="#contact" class="btn">Hire Me</a>
+                    <h2>Multimedia Computing Student</h2>
+                    <p>A motivated, creative, and fast-learning third-year student at UNIMAS, skilled in UI/UX design, Java, Python, and web development. Seeking an internship to apply technical expertise in real-world technology projects.</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
                 </div>
                 <div class="hero-image">
                     <!-- Using the profile picture from your screenshot -->
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDM1MCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzNTAiIGhlaWdodD0iMzUwIiByeD0iMTc1IiBmaWxsPSIjMTExODI3Ii8+CjxjaXJjbGUgY3g9IjE3NSIgY3k9IjE0MCIgcj0iNjAiIGZpbGw9IiNFQzQ4OTkiLz4KPHBhdGggZD0iTTEwMCAyODBDMTAwIDI0MCAxMzAgMjEwIDE3NSAyMTBDMjIwIDIxMCAyNTAgMjQwIDI1MCAyODBWMzUwSDEwMFYyODBaIiBmaWxsPSIjRUM0ODk5Ii8+CjxjaXJjbGUgY3g9IjE0NSIgY3k9IjEzMCIgcj0iMTAiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjIwNSIgY3k9IjEzMCIgcj0iMTAiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xNDAgMTgwTDE2MCAyMDBMMjEwIDE2MCIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+" alt="Nurul Hidayu" class="profile-img">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Nurul Hidayu" class="profile-img">
                     <div class="floating-elements">
                         <div class="floating-element">
                             <i class="fas fa-palette"></i>
@@ -715,30 +869,32 @@ textarea.form-control {
             </div>
         </div>
     </section>
-    <!-- About Section -->
+<!-- About Section -->
     <section class="about" id="about">
         <div class="container">
             <div class="section-title">
                 <h2>About Me</h2>
-                <p>Get to know more about my background, skills, and experience</p>
+                <button onclick="editSection('about')" class="btn-edit">
+                    Edit Section
+                </button>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>I'm Nurul Hidayu, a UI/UX Designer based in Malaysia</h3>
-                    <p>I'm a passionate UI/UX designer with a strong focus on creating intuitive and engaging user experiences. With a background in Multimedia Computing, I combine technical knowledge with creative design to deliver solutions that are both beautiful and functional.</p>
-                    <p>My design process is user-centered, starting with research and ending with pixel-perfect interfaces that solve real problems. I believe in the power of design to transform digital experiences and create meaningful connections between users and products.</p>
+                    <h3>I'm Nurul Hidayu, a Multimedia Computing Student at UNIMAS</h3>
+                    <p id="about-text-1">Currently pursuing a Bachelor of Multimedia Computing (Hons) at Universiti Malaysia Sarawak (UNIMAS). My academic journey has equipped me with strong foundational knowledge in programming languages like Java, Python, HTML/CSS, and Kotlin, complemented by expertise in UI/UX design using tools like Figma.</p>
+                    <p id="about-text-2">I thrive in team environments, focusing on effective communication and problem-solving to deliver high-quality, user-centric solutions. I am actively seeking an internship opportunity to apply and grow these technical and creative skills in the professional tech industry.</p>
                     <div class="about-stats">
                         <div class="stat">
-                            <h4>50+</h4>
+                            <h4>3+</h4>
+                            <p>Years of Study</p>
+                        </div>
+                        <div class="stat">
+                            <h4>10+</h4>
                             <p>Projects Completed</p>
                         </div>
                         <div class="stat">
-                            <h4>3+</h4>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h4>30+</h4>
-                            <p>Happy Clients</p>
+                            <h4>5+</h4>
+                            <p>Technologies</p>
                         </div>
                     </div>
                 </div>
@@ -748,41 +904,107 @@ textarea.form-control {
             </div>
         </div>
     </section>
-<!-- Services Section -->
-    <section class="services" id="services">
+<!-- Skills Section -->
+    <section class="skills" id="skills">
         <div class="container">
             <div class="section-title">
-                <h2>My Services</h2>
-                <p>I offer a wide range of services to help bring your digital ideas to life</p>
+                <h2>My Skills</h2>
+                <button onclick="editSection('skills')" class="btn-edit">
+                    Edit Section
+                </button>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <ul id="programming-skills">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>HTML / CSS / JavaScript</li>
+                        <li>C / C++</li>
+                        <li>Kotlin</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
                         <i class="fas fa-pencil-ruler"></i>
                     </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Creating intuitive and engaging user interfaces with a focus on user experience and usability testing.</p>
+                    <h3>Design & Tools</h3>
+                    <ul id="design-skills">
+                        <li>Figma (UI/UX Design)</li>
+                        <li>Canva (Graphics)</li>
+                        <li>Unity (Game Design)</li>
+                        <li>MySQL (Database)</li>
+                        <li>PHP (Web Backend)</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <h3>Mobile App Design</h3>
-                    <p>Designing responsive and user-friendly mobile applications for iOS and Android platforms.</p>
+                    <h3>Soft Skills</h3>
+                    <ul id="soft-skills">
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                        <li>Leadership</li>
+                        <li>Problem Solving</li>
+                        <li>Fast Learning</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
+            </div>
+        </div>
+    </section>
+<!-- Tools Section -->
+    <section class="tools" id="tools">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Expertise In Tools</h2>
+                <button onclick="editSection('tools')" class="btn-edit">
+                    Edit Section
+                </button>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fab fa-sketch"></i>
                     </div>
-                    <h3>Web Design</h3>
-                    <p>Developing modern, responsive websites that provide optimal user experience across all devices.</p>
+                    <h3>SKETCH</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                    <div class="percentage">95%</div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bullhorn"></i>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fab fa-adobe"></i>
                     </div>
-                    <h3>Branding</h3>
-                    <p>Creating cohesive brand identities that communicate your values and resonate with your audience.</p>
+                    <h3>PHOTOSHOP</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                    <div class="percentage">95%</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fab fa-adobe"></i>
+                    </div>
+                    <h3>ILLUSTRATOR</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                    <div class="percentage">95%</div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>FIGMA</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                    <div class="percentage">90%</div>
                 </div>
             </div>
         </div>
@@ -791,125 +1013,15 @@ textarea.form-control {
     <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="section-title">
-                <h2>My Portfolio</h2>
-                <p>Check out some of my recent work and projects</p>
-            </div>
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="ui-ux">UI/UX Design</button>
-                <button class="filter-btn" data-filter="web">Web Design</button>
-                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <h2>Latest Projects</h2>
+                <button onclick="editSection('portfolio')" class="btn-edit">
+                    Edit Section
+                </button>
             </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="ui-ux">
+                <div class="portfolio-item">
                     <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Project 1" class="portfolio-img">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
-                            <h3>E-commerce App Design</h3>
-                            <p>UI/UX Design</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="web">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Project 2" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <h3>Corporate Website</h3>
-                            <p>Web Design</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="mobile">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Project 3" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <h3>Fitness Mobile App</h3>
-                            <p>Mobile App</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="ui-ux">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Project 4" class="portfolio-img">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <h3>Dashboard Design</h3>
-                            <p>UI/UX Design</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p>Feel free to reach out for collaborations or just a friendly hello</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Talk About Your Project</h3>
-                    <p>I'm always interested in new opportunities and challenges. Whether you have a project in mind or just want to say hello, I'd love to hear from you.</p>
-                    <div class="contact-details">
-                        <div class="contact-detail">
-                            <i class="fas fa-phone-alt"></i>
-                            <span>+60 193375235</span>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-envelope"></i>
-                            <span>nurulhidayu1111@gmail.com</span>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Kuching, Sarawak, Malaysia</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-dribbble"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <div class="footer-logo">Nurul<span>Hidayu</span></div>
-                    <p>A passionate UI/UX designer creating beautiful and functional digital experiences.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    
+                            <h3 id="project-1-title">Mental Health Awareness Web Application</h3>
+                            
