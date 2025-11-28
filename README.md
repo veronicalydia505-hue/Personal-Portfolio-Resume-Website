@@ -105,7 +105,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="max-w-3xl mx-auto">
                     <!-- Placeholder for profile image - Updated to Pink Accent -->
-                    <img src="https://placehold.co/150x150/EC4899/FFFFFF?text=NH" onerror="this.onerror=null;this.src='https://placehold.co/150x150/EC4899/FFFFFF?text=NH'" alt="Profile Photo" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-pink-400 shadow-2xl">
+                    <img src="uploaded:Screenshot 2025-11-27 221045.png-c9422a9b-c4ec-42f9-b96a-3e8e0250e937" onerror="this.onerror=null;this.src='uploaded:Screenshot 2025-11-27 221045.png-c9422a9b-c4ec-42f9-b96a-3e8e0250e937'" alt="Profile Photo" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-pink-400 shadow-2xl">
                     <!-- Text updated to Pink 300 -->
                     <p class="text-lg font-medium text-pink-300 mb-2 uppercase tracking-widest">
                         Multimedia Computing Student
