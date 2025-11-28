@@ -454,7 +454,7 @@ nav ul {
     <section id="home" class="hero">
         <div class="container">
             <div class="profile-container">
-                <img src="https://github.com/veronicalydia505-hue/Personal-Portfolio-Resume-Website/blob/main/Screenshot%202025-11-27%20221045.png" width="400" height="400" alt"Screenshot 2025-11-27 221045.png">
+                <img src="[Screenshot 2025-11-27 221045.png](https://github.com/veronicalydia505-hue/Personal-Portfolio-Resume-Website/blob/main/Screenshot%202025-11-27%20221045.png)" width="400" height="400" alt"Screenshot 2025-11-27 221045.png">
         </div>
             <h1>Nurul Hidayu</h1>
             <h2>Multimedia Computing Student & UI/UX Designer</h2>
