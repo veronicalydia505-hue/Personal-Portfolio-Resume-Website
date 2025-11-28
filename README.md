@@ -104,8 +104,11 @@
         <section id="home" class="pt-16 pb-20 md:pt-24 md:pb-32 bg-gray-900" style="background-image: url('home.jpg-8ca91301-a986-4bef-bbf5-f18541b135cc'); background-size: cover; background-position: center; background-blend-mode: multiply; background-color: rgba(3, 7, 18, 0.85);">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="max-w-3xl mx-auto">
-                    <!-- Placeholder for profile image - Updated to Pink Accent -->
-                    <img src="uploaded:Screenshot 2025-11-27 221045.png-c9422a9b-c4ec-42f9-b96a-3e8e0250e937" onerror="this.onerror=null;this.src='uploaded:Screenshot 2025-11-27 221045.png-c9422a9b-c4ec-42f9-b96a-3e8e0250e937'" alt="Profile Photo"  class="w-48 h-48 object-cover rounded-full border-4 border-indigo-500 shadow-xl transition-transform duration-300 hover:scale-105">
+                    <!-- Updated Profile Image with uploaded file, requested size, and pink border -->
+                    <img src="uploaded:Screenshot 2025-11-27 221045.png-cb963e16-5541-41bd-be1b-a77dfd01dfcf" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/150x150/EC4899/FFFFFF?text=NH'" 
+                         alt="Profile Photo" 
+                         class="w-48 h-48 object-cover rounded-full mx-auto mb-6 border-4 border-pink-400 shadow-2xl transition-transform duration-300 hover:scale-105">
                     <!-- Text updated to Pink 300 -->
                     <p class="text-lg font-medium text-pink-300 mb-2 uppercase tracking-widest">
                         Multimedia Computing Student
@@ -153,7 +156,7 @@
                         </div>
                     </div>
                     <div class="lg:order-1">
-                        <img src="uploaded:Screenshot 2025-11-27 221045.png-c9422a9b-c4ec-42f9-b96a-3e8e0250e937" alt="Nurul Hidayu working" class="responsive-img max-h-[500px] lg:max-h-full" onerror="this.onerror=null;this.src='https://placehold.co/600x600/374151/FFFFFF?text=N+H+Profile';">
+                         <img src="about.jpg-236a1f60-caa2-4f10-b2a6-7f076c8ec687" alt="Nurul Hidayu working" class="responsive-img max-h-[500px] lg:max-h-full" onerror="this.onerror=null;this.src='https://placehold.co/600x600/374151/FFFFFF?text=N+H+Profile';">
                     </div>
                 </div>
             </div>
