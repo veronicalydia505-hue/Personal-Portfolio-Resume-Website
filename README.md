@@ -455,15 +455,14 @@ nav ul {
         <div class="container">
             <div class="profile-container">
                  <img 
-                src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                src="Screenshot 2025-11-28 193320.png&auto=format&fit=crop&w=500&q=80" 
                 alt="Nurul Hidayu Profile Picture" 
                 class="profile-picture" 
                 id="profilePic"
                 onerror="this.style.display='none'; document.getElementById('fallbackInitials').style.display='flex';"
             >
             <div class="fallback-initials" id="fallbackInitials" style="display: none;">
-                NH
-            </div>
+              </div>
         </div>
             <h1>Nurul Hidayu</h1>
             <h2>Multimedia Computing Student & UI/UX Designer</h2>
