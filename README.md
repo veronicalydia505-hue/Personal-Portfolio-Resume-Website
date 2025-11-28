@@ -101,11 +101,11 @@
     </header>
 <main>
         <!-- 1. Hero Section -->
-        <section id="home" class="pt-16 pb-20 md:pt-24 md:pb-32 bg-gray-900" style="background-image: url('home.jpg-8ca91301-a986-4bef-bbf5-f18541b135cc'); background-size: cover; background-position: center; background-blend-mode: multiply; background-color: rgba(3, 7, 18, 0.85);">
+        <section id="home" class="pt-16 pb-20 md:pt-24 md:pb-32 bg-gray-900" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center; background-blend-mode: multiply; background-color: rgba(3, 7, 18, 0.85);">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="max-w-3xl mx-auto">
                     <!-- Updated Profile Image with uploaded file, requested size, and pink border -->
-                    <img src="uploaded:Screenshot 2025-11-27 221045.png-cb963e16-5541-41bd-be1b-a77dfd01dfcf" 
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" 
                          onerror="this.onerror=null;this.src='https://placehold.co/150x150/EC4899/FFFFFF?text=NH'" 
                          alt="Profile Photo" 
                          class="w-48 h-48 object-cover rounded-full mx-auto mb-6 border-4 border-pink-400 shadow-2xl transition-transform duration-300 hover:scale-105">
@@ -135,28 +135,28 @@
                                 Edit Section
                             </button>
                         </div>
-                        <p class="text-gray-300 mb-4 leading-relaxed">
+                        <p id="about-text-1" class="text-gray-300 mb-4 leading-relaxed">
                             Currently pursuing a Bachelor of Multimedia Computing (Hons) at Universiti Malaysia Sarawak (UNIMAS). My academic journey has equipped me with strong foundational knowledge in programming languages like Java, Python, HTML/CSS, and Kotlin, complemented by expertise in UI/UX design using tools like Figma.
                         </p>
-                        <p class="text-gray-300 mb-6 leading-relaxed">
+                        <p id="about-text-2" class="text-gray-300 mb-6 leading-relaxed">
                             I thrive in team environments, focusing on effective communication and problem-solving to deliver high-quality, user-centric solutions.
                         </p>
                         <div class="space-y-4">
                             <!-- Education title updated to Pink 400 -->
                             <h3 class="text-2xl font-semibold text-pink-400 mt-8 mb-4">Education</h3>
                             <!-- Card background updated to a darker gray -->
-                            <div class="bg-gray-900 p-4 rounded-lg shadow-inner">
+                            <div id="education-1" class="bg-gray-900 p-4 rounded-lg shadow-inner">
                                 <p class="font-bold text-white">Bachelor of Multimedia Computing (Hons)</p>
                                 <p class="text-sm text-pink-300">Universiti Malaysia Sarawak (UNIMAS) - Current</p>
                             </div>
-                            <div class="bg-gray-900 p-4 rounded-lg shadow-inner">
+                            <div id="education-2" class="bg-gray-900 p-4 rounded-lg shadow-inner">
                                 <p class="font-bold text-white">Foundation in Life Science (Pre-University)</p>
                                 <p class="text-sm text-pink-300">Universiti Malaysia Sarawak (UNIMAS)</p>
                             </div>
                         </div>
                     </div>
                     <div class="lg:order-1">
-                         <img src="about.jpg-236a1f60-caa2-4f10-b2a6-7f076c8ec687" alt="Nurul Hidayu working" class="responsive-img max-h-[500px] lg:max-h-full" onerror="this.onerror=null;this.src='https://placehold.co/600x600/374151/FFFFFF?text=N+H+Profile';">
+                         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Nurul Hidayu working" class="responsive-img max-h-[500px] lg:max-h-full" onerror="this.onerror=null;this.src='https://placehold.co/600x600/374151/FFFFFF?text=N+H+Profile';">
                     </div>
                 </div>
             </div>
@@ -173,7 +173,7 @@
                 </div>
                  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <!-- Card Background and Hover Shadow updated to Pink -->
-                    <div class="bg-gray-900 p-6 rounded-xl shadow-xl hover:shadow-pink-500/20 transition duration-300">
+                    <div id="skills-programming" class="bg-gray-900 p-6 rounded-xl shadow-xl hover:shadow-pink-500/20 transition duration-300">
                         <h3 class="text-2xl font-semibold text-pink-400 mb-3">Programming</h3>
                         <ul class="space-y-2 text-gray-300">
                             <li>Java</li>
@@ -183,7 +183,7 @@
                             <li>Kotlin</li>
                         </ul>
                     </div>
-<div class="bg-gray-900 p-6 rounded-xl shadow-xl hover:shadow-pink-500/20 transition duration-300">
+<div id="skills-design" class="bg-gray-900 p-6 rounded-xl shadow-xl hover:shadow-pink-500/20 transition duration-300">
                         <h3 class="text-2xl font-semibold text-pink-400 mb-3">Design & Tools</h3>
                         <ul class="space-y-2 text-gray-300">
                             <li>Figma (UI/UX Design)</li>
@@ -193,7 +193,7 @@
                             <li>PHP (Web Backend)</li>
                         </ul>
                     </div>
-<div class="bg-gray-900 p-6 rounded-xl shadow-xl hover:shadow-pink-500/20 transition duration-300">
+<div id="skills-soft" class="bg-gray-900 p-6 rounded-xl shadow-xl hover:shadow-pink-500/20 transition duration-300">
                         <h3 class="text-2xl font-semibold text-pink-400 mb-3">Soft Skills</h3>
                         <ul class="space-y-2 text-gray-300">
                             <li>Teamwork</li>
@@ -202,7 +202,7 @@
                             <li>Problem Solving</li>
                         </ul>
                     </div>
-                    <div class="col-span-2 md:col-span-1 bg-gray-900 p-6 rounded-xl shadow-xl hover:shadow-pink-500/20 transition duration-300">
+                    <div id="skills-core" class="col-span-2 md:col-span-1 bg-gray-900 p-6 rounded-xl shadow-xl hover:shadow-pink-500/20 transition duration-300">
                         <h3 class="text-2xl font-semibold text-pink-400 mb-3">Core Studies</h3>
                         <ul class="space-y-2 text-gray-300">
                             <li>UI/UX Design</li>
@@ -226,7 +226,7 @@
                 </div>
                 <div class="space-y-12">
                     <!-- Project 1: Mental Health Awareness Web Application -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 bg-gray-900 rounded-xl overflow-hidden shadow-2xl hover:shadow-pink-500/30 transition duration-300">
+                    <div id="project-1" class="grid grid-cols-1 md:grid-cols-3 bg-gray-900 rounded-xl overflow-hidden shadow-2xl hover:shadow-pink-500/30 transition duration-300">
                         <div class="md:col-span-1">
                             <img src="https://placehold.co/600x400/EC4899/030712?text=UI%2FUX+Project" alt="Mental Health App Screenshot" class="w-full h-full object-cover">
                         </div>
@@ -234,18 +234,18 @@
                             <!-- Tag updated to Pink 600 -->
                             <span class="inline-block bg-pink-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">UI/UX & Web Dev</span>
                             <h3 class="text-3xl font-bold text-white mb-4">Mental Health Awareness Web Application</h3>
-                            <p class="text-gray-300 mb-4">
+                            <p id="project-1-desc" class="text-gray-300 mb-4">
                                 Developed a comprehensive web application to promote mental health awareness. The project focused heavily on the user experience and design phase.
                             </p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-1">
-                                <li>Key Contribution:Designed the complete UI/UX of the user interfaces in Figma.</li>
-                                <li>Process:Applied feedback from extensive usability testing to iterate and improve the final design.</li>
-                                <li>Technologies:Java, HTML, CSS, MySQL.</li>
+                            <ul id="project-1-details" class="list-disc list-inside text-gray-400 space-y-1">
+                                <li>Key Contribution: Designed the complete UI/UX of the user interfaces in Figma.</li>
+                                <li>Process: Applied feedback from extensive usability testing to iterate and improve the final design.</li>
+                                <li>Technologies: Java, HTML, CSS, MySQL.</li>
                             </ul>
                         </div>
                     </div>
 <!-- Project 2: Car Rental Management Website - "ZoomRentals" -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 bg-gray-900 rounded-xl overflow-hidden shadow-2xl hover:shadow-pink-500/30 transition duration-300">
+                    <div id="project-2" class="grid grid-cols-1 md:grid-cols-3 bg-gray-900 rounded-xl overflow-hidden shadow-2xl hover:shadow-pink-500/30 transition duration-300">
                         <div class="md:col-span-1">
                             <img src="https://placehold.co/600x400/EC4899/030712?text=PHP+MySQL+System" alt="Car Rental Website Screenshot" class="w-full h-full object-cover">
                         </div>
@@ -253,13 +253,13 @@
                             <!-- Tag updated to Pink 600 -->
                             <span class="inline-block bg-pink-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">Backend & Database</span>
                             <h3 class="text-3xl font-bold text-white mb-4">Car Rental Management Website - "ZoomRentals"</h3>
-                            <p class="text-gray-300 mb-4">
+                            <p id="project-2-desc" class="text-gray-300 mb-4">
                                 Built a full-featured car rental system with interfaces for booking, vehicle listing, and administrator management.
                             </p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-1">
-                                <li>Key Feature:Implemented backend logic using PHP for dynamic data processing and handling.</li>
-                                <li>Database:Integrated with MySQL to manage vehicle inventory, bookings, and user accounts.</li>
-                                <li>Technologies:HTML, PHP, MySQL.</li>
+                            <ul id="project-2-details" class="list-disc list-inside text-gray-400 space-y-1">
+                                <li>Key Feature: Implemented backend logic using PHP for dynamic data processing and handling.</li>
+                                <li>Database: Integrated with MySQL to manage vehicle inventory, bookings, and user accounts.</li>
+                                <li>Technologies: HTML, PHP, MySQL.</li>
                             </ul>
                         </div>
                     </div>
@@ -278,18 +278,18 @@
                 </div>
                  <!-- Card background updated to a darker gray -->
                 <div class="max-w-3xl mx-auto bg-gray-900 p-8 md:p-12 rounded-xl shadow-2xl">
-                    <p class="text-gray-300 text-center mb-8">
+                    <p id="contact-desc" class="text-gray-300 text-center mb-8">
                         I am currently seeking job opportunities in technology and design. Feel free to connect with me!
                     </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 text-center">
                         <!-- Inner card backgrounds updated -->
                         <div class="p-4 bg-gray-800 rounded-lg">
                             <p class="font-semibold text-pink-400">Email</p>
-                            <p class="text-lg text-white">nurulhidayu1111@gmail.com</p>
+                            <p id="contact-email" class="text-lg text-white">nurulhidayu1111@gmail.com</p>
                         </div>
                         <div class="p-4 bg-gray-800 rounded-lg">
                             <p class="font-semibold text-pink-400">Phone</p>
-                            <p class="text-lg text-white">+60 193375235</p>
+                            <p id="contact-phone" class="text-lg text-white">+60 193375235</p>
                         </div>
                     </div>
 <!-- Simple Contact Form Placeholder -->
@@ -342,11 +342,11 @@
         const editModalContent = document.getElementById('editModalContent');
         const cancelEditBtn = document.getElementById('cancelEdit');
         const saveEditBtn = document.getElementById('saveEdit');
-         let currentSection = '';
+        let currentSection = '';
         // Function to open edit modal for a specific section
         function editSection(sectionId) {
             currentSection = sectionId;
-            // Set modal title based on section
+        // Set modal title based on section
             let sectionTitle = '';
             switch(sectionId) {
                 case 'about':
@@ -368,117 +368,162 @@
             // Generate appropriate edit form based on section
             let editForm = '';
             if (sectionId === 'about') {
+                const aboutText1 = document.getElementById('about-text-1').textContent;
+                const aboutText2 = document.getElementById('about-text-2').textContent;
+                const education1Title = document.querySelector('#education-1 .font-bold').textContent;
+                const education1Subtitle = document.querySelector('#education-1 .text-sm').textContent;
+                const education2Title = document.querySelector('#education-2 .font-bold').textContent;
+                const education2Subtitle = document.querySelector('#education-2 .text-sm').textContent;
                 editForm = `
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">About Text 1</label>
-                        <textarea class="edit-textarea">Currently pursuing a Bachelor of Multimedia Computing (Hons) at Universiti Malaysia Sarawak (UNIMAS). My academic journey has equipped me with strong foundational knowledge in programming languages like Java, Python, HTML/CSS, and Kotlin, complemented by expertise in UI/UX design using tools like Figma.</textarea>
+                        <textarea id="edit-about-text-1" class="edit-textarea">${aboutText1}</textarea>
                     </div>
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">About Text 2</label>
-                        <textarea class="edit-textarea">I thrive in team environments, focusing on effective communication and problem-solving to deliver high-quality, user-centric solutions. I am actively seeking an internship opportunity to apply and grow these technical and creative skills in the professional tech industry.</textarea>
+                        <textarea id="edit-about-text-2" class="edit-textarea">${aboutText2}</textarea>
                     </div>
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Education 1</label>
-                        <input type="text" class="edit-input" value="Bachelor of Multimedia Computing (Hons)">
-                        <input type="text" class="edit-input mt-2" value="Universiti Malaysia Sarawak (UNIMAS) - Current">
+                        <input type="text" id="edit-education-1-title" class="edit-input" value="${education1Title}">
+                        <input type="text" id="edit-education-1-subtitle" class="edit-input mt-2" value="${education1Subtitle}">
                     </div>
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Education 2</label>
-                        <input type="text" class="edit-input" value="Foundation in Life Science (Pre-University)">
-                        <input type="text" class="edit-input mt-2" value="Universiti Malaysia Sarawak (UNIMAS)">
+                        <input type="text" id="edit-education-2-title" class="edit-input" value="${education2Title}">
+                        <input type="text" id="edit-education-2-subtitle" class="edit-input mt-2" value="${education2Subtitle}">
                     </div>
                 `;
             } else if (sectionId === 'skills') {
+                const programmingSkills = Array.from(document.querySelectorAll('#skills-programming li')).map(li => li.textContent).join('\n');
+                const designSkills = Array.from(document.querySelectorAll('#skills-design li')).map(li => li.textContent).join('\n');
+                const softSkills = Array.from(document.querySelectorAll('#skills-soft li')).map(li => li.textContent).join('\n');
+                const coreSkills = Array.from(document.querySelectorAll('#skills-core li')).map(li => li.textContent).join('\n');
                 editForm = `
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Programming Skills</label>
-                        <textarea class="edit-textarea">Java\nPython\nHTML / CSS / JavaScript\nC / C++\nKotlin</textarea>
+                        <textarea id="edit-skills-programming" class="edit-textarea">${programmingSkills}</textarea>
                     </div>
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Design & Tools</label>
-                        <textarea class="edit-textarea">Figma (UI/UX Design)\nCanva (Graphics)\nUnity (Game Design)\nMySQL (Database)\nPHP (Web Backend)</textarea>
+                        <textarea id="edit-skills-design" class="edit-textarea">${designSkills}</textarea>
                     </div>
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Soft Skills</label>
-                        <textarea class="edit-textarea">Teamwork\nCommunication\nLeadership\nProblem Solving</textarea>
+                        <textarea id="edit-skills-soft" class="edit-textarea">${softSkills}</textarea>
                     </div>
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Core Studies</label>
-                        <textarea class="edit-textarea">UI/UX Design\nWeb Application Development\nHuman-Computer Interaction\nDatabase Concept & Design</textarea>
+                        <textarea id="edit-skills-core" class="edit-textarea">${coreSkills}</textarea>
                     </div>
                 `;
             } else if (sectionId === 'projects') {
+                const project1Desc = document.getElementById('project-1-desc').textContent;
+                const project1Details = Array.from(document.querySelectorAll('#project-1-details li')).map(li => li.textContent).join('\n');
+                const project2Desc = document.getElementById('project-2-desc').textContent;
+                const project2Details = Array.from(document.querySelectorAll('#project-2-details li')).map(li => li.textContent).join('\n');
                 editForm = `
                     <div class="mb-6 p-4 bg-gray-800 rounded-lg">
                         <h4 class="text-lg font-semibold text-pink-400 mb-2">Project 1: Mental Health Awareness Web Application</h4>
                         <div class="mb-3">
                             <label class="block text-sm font-medium text-gray-300 mb-1">Description</label>
-                            <textarea class="edit-textarea">Developed a comprehensive web application to promote mental health awareness. The project focused heavily on the user experience and design phase.</textarea>
+                            <textarea id="edit-project-1-desc" class="edit-textarea">${project1Desc}</textarea>
                         </div>
                         <div class="mb-3">
-                            <label class="block text-sm font-medium text-gray-300 mb-1">Key Contribution</label>
-                            <input type="text" class="edit-input" value="Designed the complete UI/UX of the user interfaces in Figma.">
-                        </div>
-                        <div class="mb-3">
-                            <label class="block text-sm font-medium text-gray-300 mb-1">Process</label>
-                            <input type="text" class="edit-input" value="Applied feedback from extensive usability testing to iterate and improve the final design.">
-                        </div>
-                        <div class="mb-3">
-                            <label class="block text-sm font-medium text-gray-300 mb-1">Technologies</label>
-                            <input type="text" class="edit-input" value="Java, HTML, CSS, MySQL">
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Details (one per line)</label>
+                            <textarea id="edit-project-1-details" class="edit-textarea">${project1Details}</textarea>
                         </div>
                     </div>
                     <div class="p-4 bg-gray-800 rounded-lg">
                         <h4 class="text-lg font-semibold text-pink-400 mb-2">Project 2: Car Rental Management Website - "ZoomRentals"</h4>
                         <div class="mb-3">
                             <label class="block text-sm font-medium text-gray-300 mb-1">Description</label>
-                            <textarea class="edit-textarea">Built a full-featured car rental system with interfaces for booking, vehicle listing, and administrator management.</textarea>
+                            <textarea id="edit-project-2-desc" class="edit-textarea">${project2Desc}</textarea>
                         </div>
                         <div class="mb-3">
-                            <label class="block text-sm font-medium text-gray-300 mb-1">Key Feature</label>
-                            <input type="text" class="edit-input" value="Implemented backend logic using PHP for dynamic data processing and handling.">
-                        </div>
-                        <div class="mb-3">
-                            <label class="block text-sm font-medium text-gray-300 mb-1">Database</label>
-                            <input type="text" class="edit-input" value="Integrated with MySQL to manage vehicle inventory, bookings, and user accounts.">
-                        </div>
-                        <div class="mb-3">
-                            <label class="block text-sm font-medium text-gray-300 mb-1">Technologies</label>
-                            <input type="text" class="edit-input" value="HTML, PHP, MySQL">
+                            <label class="block text-sm font-medium text-gray-300 mb-1">Details (one per line)</label>
+                            <textarea id="edit-project-2-details" class="edit-textarea">${project2Details}</textarea>
                         </div>
                     </div>
                 `;
             } else if (sectionId === 'contact') {
+                const contactDesc = document.getElementById('contact-desc').textContent;
+                const contactEmail = document.getElementById('contact-email').textContent;
+                const contactPhone = document.getElementById('contact-phone').textContent;
                 editForm = `
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Contact Description</label>
-                        </div>
+                        <textarea id="edit-contact-desc" class="edit-textarea">${contactDesc}</textarea>
+                    </div>
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                        <input type="text" class="edit-input" value="nurulhidayu1111@gmail.com">
+                        <input type="text" id="edit-contact-email" class="edit-input" value="${contactEmail}">
                     </div>
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Phone</label>
-                        <input type="text" class="edit-input" value="+60 193375235">
+                        <input type="text" id="edit-contact-phone" class="edit-input" value="${contactPhone}">
                     </div>
                 `;
             }
             editModalContent.innerHTML = editForm;
             editModal.style.display = 'flex';
         }
-        // Function to save changes
+         // Function to save changes
         function saveChanges() {
-            // In a real application, this would save to a database
-            // For this demo, we'll just show an alert and close the modal
-            alert(`Changes to ${currentSection} section have been saved!`);
+            if (currentSection === 'about') {
+                document.getElementById('about-text-1').textContent = document.getElementById('edit-about-text-1').value;
+                document.getElementById('about-text-2').textContent = document.getElementById('edit-about-text-2').value;
+                document.querySelector('#education-1 .font-bold').textContent = document.getElementById('edit-education-1-title').value;
+                document.querySelector('#education-1 .text-sm').textContent = document.getElementById('edit-education-1-subtitle').value;
+                document.querySelector('#education-2 .font-bold').textContent = document.getElementById('edit-education-2-title').value;
+                document.querySelector('#education-2 .text-sm').textContent = document.getElementById('edit-education-2-subtitle').value;
+            } else if (currentSection === 'skills') {
+                updateSkillsList('skills-programming', 'edit-skills-programming');
+                updateSkillsList('skills-design', 'edit-skills-design');
+                updateSkillsList('skills-soft', 'edit-skills-soft');
+                updateSkillsList('skills-core', 'edit-skills-core');
+            } else if (currentSection === 'projects') {
+                document.getElementById('project-1-desc').textContent = document.getElementById('edit-project-1-desc').value;
+                updateProjectDetails('project-1-details', 'edit-project-1-details');
+                document.getElementById('project-2-desc').textContent = document.getElementById('edit-project-2-desc').value;
+                updateProjectDetails('project-2-details', 'edit-project-2-details');
+            } else if (currentSection === 'contact') {
+                document.getElementById('contact-desc').textContent = document.getElementById('edit-contact-desc').value;
+                document.getElementById('contact-email').textContent = document.getElementById('edit-contact-email').value;
+                document.getElementById('contact-phone').textContent = document.getElementById('edit-contact-phone').value;
+            }
             editModal.style.display = 'none';
+        }
+         // Helper function to update skills lists
+        function updateSkillsList(targetId, sourceId) {
+            const skillsList = document.getElementById(targetId).querySelector('ul');
+            const skillsText = document.getElementById(sourceId).value;
+            const skillsArray = skillsText.split('\n').filter(skill => skill.trim() !== '');
+            skillsList.innerHTML = '';
+            skillsArray.forEach(skill => {
+                const li = document.createElement('li');
+                li.textContent = skill;
+                skillsList.appendChild(li);
+            });
+        }
+        // Helper function to update project details
+        function updateProjectDetails(targetId, sourceId) {
+            const detailsList = document.getElementById(targetId);
+            const detailsText = document.getElementById(sourceId).value;
+            const detailsArray = detailsText.split('\n').filter(detail => detail.trim() !== '');
+            detailsList.innerHTML = '';
+            detailsArray.forEach(detail => {
+                const li = document.createElement('li');
+                li.textContent = detail;
+                detailsList.appendChild(li);
+            });
         }
         // Event listeners for modal buttons
         cancelEditBtn.addEventListener('click', () => {
             editModal.style.display = 'none';
         });
         saveEditBtn.addEventListener('click', saveChanges);
-        // Close modal when clicking outside
+    // Close modal when clicking outside
         editModal.addEventListener('click', (e) => {
             if (e.target === editModal) {
                 editModal.style.display = 'none';
@@ -502,7 +547,7 @@
 // Optional: Highlight active navigation link based on scroll position
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-link');
-	window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', () => {
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 70; // Offset for fixed header
@@ -510,7 +555,7 @@
                     current = section.getAttribute('id');
                 }
             });
-navLinks.forEach(link => {
+ navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href').includes(current)) {
                     link.classList.add('active');
