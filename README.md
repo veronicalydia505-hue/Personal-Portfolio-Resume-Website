@@ -133,10 +133,10 @@
                             </button>
                         </div>
                         <p class="text-gray-300 mb-4 leading-relaxed">
-                            Currently pursuing a Bachelor of Multimedia Computing (Hons) at Universiti Malaysia Sarawak (UNIMAS). My academic journey has equipped me with strong foundational knowledge in programming languages like **Java, Python, HTML/CSS, and Kotlin**, complemented by expertise in **UI/UX design** using tools like Figma.
+                            Currently pursuing a Bachelor of Multimedia Computing (Hons) at Universiti Malaysia Sarawak (UNIMAS). My academic journey has equipped me with strong foundational knowledge in programming languages like Java, Python, HTML/CSS, and Kotlin, complemented by expertise in **UI/UX design** using tools like Figma.
                         </p>
                         <p class="text-gray-300 mb-6 leading-relaxed">
-                            I thrive in team environments, focusing on effective communication and problem-solving to deliver high-quality, user-centric solutions. I am actively seeking an internship opportunity to apply and grow these technical and creative skills in the professional tech industry.
+                            I thrive in team environments, focusing on effective communication and problem-solving to deliver high-quality, user-centric solutions.
                         </p>
                         <div class="space-y-4">
                             <!-- Education title updated to Pink 400 -->
@@ -235,9 +235,9 @@
                                 Developed a comprehensive web application to promote mental health awareness. The project focused heavily on the user experience and design phase.
                             </p>
                             <ul class="list-disc list-inside text-gray-400 space-y-1">
-                                <li>**Key Contribution:** Designed the complete UI/UX of the user interfaces in Figma.</li>
-                                <li>**Process:** Applied feedback from extensive usability testing to iterate and improve the final design.</li>
-                                <li>**Technologies:** Java, HTML, CSS, MySQL.</li>
+                                <li>Key Contribution:Designed the complete UI/UX of the user interfaces in Figma.</li>
+                                <li>Process:Applied feedback from extensive usability testing to iterate and improve the final design.</li>
+                                <li>Technologies:Java, HTML, CSS, MySQL.</li>
                             </ul>
                         </div>
                     </div>
@@ -254,9 +254,9 @@
                                 Built a full-featured car rental system with interfaces for booking, vehicle listing, and administrator management.
                             </p>
                             <ul class="list-disc list-inside text-gray-400 space-y-1">
-                                <li>**Key Feature:** Implemented backend logic using PHP for dynamic data processing and handling.</li>
-                                <li>**Database:** Integrated with MySQL to manage vehicle inventory, bookings, and user accounts.</li>
-                                <li>**Technologies:** HTML, PHP, MySQL.</li>
+                                <li>Key Feature:Implemented backend logic using PHP for dynamic data processing and handling.</li>
+                                <li>Database:Integrated with MySQL to manage vehicle inventory, bookings, and user accounts.</li>
+                                <li>Technologies:HTML, PHP, MySQL.</li>
                             </ul>
                         </div>
                     </div>
@@ -276,7 +276,7 @@
                  <!-- Card background updated to a darker gray -->
                 <div class="max-w-3xl mx-auto bg-gray-900 p-8 md:p-12 rounded-xl shadow-2xl">
                     <p class="text-gray-300 text-center mb-8">
-                        I am currently seeking internship opportunities in technology and design. Feel free to connect with me!
+                        I am currently seeking job opportunities in technology and design. Feel free to connect with me!
                     </p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 text-center">
                         <!-- Inner card backgrounds updated -->
