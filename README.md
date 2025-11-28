@@ -368,7 +368,7 @@
                 editForm = `
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">About Text 1</label>
-                        <textarea class="edit-textarea">Currently pursuing a Bachelor of Multimedia Computing (Hons) at Universiti Malaysia Sarawak (UNIMAS). My academic journey has equipped me with strong foundational knowledge in programming languages like **Java, Python, HTML/CSS, and Kotlin**, complemented by expertise in **UI/UX design** using tools like Figma.</textarea>
+                        <textarea class="edit-textarea">Currently pursuing a Bachelor of Multimedia Computing (Hons) at Universiti Malaysia Sarawak (UNIMAS). My academic journey has equipped me with strong foundational knowledge in programming languages like Java, Python, HTML/CSS, and Kotlin, complemented by expertise in UI/UX design using tools like Figma.</textarea>
                     </div>
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">About Text 2</label>
@@ -449,8 +449,7 @@
                 editForm = `
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Contact Description</label>
-                        <textarea class="edit-textarea">I am currently seeking internship opportunities in technology and design. Feel free to connect with me!</textarea>
-                    </div>
+                        </div>
                     <div class="mb-4">
                         <label class="block text-sm font-medium text-gray-300 mb-1">Email</label>
                         <input type="text" class="edit-input" value="nurulhidayu1111@gmail.com">
