@@ -358,7 +358,7 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="profile-container">
-                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Nurul Hidayu" class="profile-pic">
+                <img src="https://github.com/veronicalydia505-hue/Personal-Portfolio-Resume-Website/blob/04db25043466c2bfc613897741d76e4cbc023715/Screenshot%202025-11-27%20221045.png&auto=format&fit=crop&w=500&q=80" alt="Nurul Hidayu" class="profile-pic">
             </div>
             <h1>Nurul Hidayu</h1>
             <h2>Multimedia Computing Student & UI/UX Designer</h2>
