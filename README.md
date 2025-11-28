@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nurul Hidayu - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary-bg: #0a0a0a;
@@ -20,23 +21,29 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        body {
+        html {
+            scroll-behavior: smooth;
+        }
+         body {
             background-color: var(--primary-bg);
             color: var(--text-color);
             line-height: 1.6;
+            overflow-x: hidden;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
-        /* Header Styles */
+        
+/* Header Styles */
         header {
             background-color: var(--secondary-bg);
             padding: 20px 0;
-            position: sticky;
+            position: fixed;
+            width: 100%;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
         .header-content {
@@ -53,23 +60,40 @@
             display: flex;
             list-style: none;
         }
-        nav ul li {
+         nav ul li {
             margin-left: 30px;
         }
-        nav ul li a {
+         nav ul li a {
             color: var(--text-color);
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
+            position: relative;
+        }
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
         }
         nav ul li a:hover {
             color: var(--accent-color);
         }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
         /* Hero Section */
         .hero {
-            padding: 100px 0;
+            padding: 150px 0 100px;
             background: linear-gradient(135deg, var(--primary-bg) 0%, #2a0a1a 100%);
             text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
         }
         .profile-container {
             margin-bottom: 30px;
@@ -91,7 +115,7 @@
             color: var(--accent-color);
             margin-bottom: 20px;
         }
-        .hero p {
+         .hero p {
             max-width: 600px;
             margin: 0 auto 30px;
             color: var(--text-muted);
@@ -113,9 +137,10 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
         }
-        /* Section Styles */
+        
+/* Section Styles */
         section {
-            padding: 80px 0;
+            padding: 100px 0;
         }
         .section-title {
             text-align: center;
@@ -137,7 +162,7 @@
             left: 50%;
             transform: translateX(-50%);
         }
-         /* About Section */
+        /* About Section */
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -148,7 +173,7 @@
             font-size: 28px;
             margin-bottom: 20px;
         }
-        .about-text p {
+         .about-text p {
             margin-bottom: 20px;
             color: var(--text-muted);
         }
@@ -174,12 +199,37 @@
             border-radius: 4px;
             overflow: hidden;
         }
-        .skill-progress {
-            height: 100%;
+        
+.skill-progress {
+    height: 100%;
             background-color: var(--accent-color);
             border-radius: 4px;
         }
         /* Portfolio Section */
+        .portfolio-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .add-project-btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        .add-project-btn:hover {
+            background-color: var(--accent-light);
+            transform: rotate(90deg);
+        }
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -195,7 +245,8 @@
         .portfolio-item:hover {
             transform: translateY(-10px);
         }
-        .portfolio-img {
+        
+.portfolio-img {
             width: 100%;
             height: 200px;
             object-fit: cover;
@@ -225,7 +276,7 @@
         .btn-outline:hover {
             background-color: var(--accent-color);
         }
-        /* Modal Styles */
+         /* Modal Styles */
         .modal {
             display: none;
             position: fixed;
@@ -238,7 +289,8 @@
             align-items: center;
             justify-content: center;
         }
-        .modal-content {
+        
+.modal-content {
             background-color: var(--card-bg);
             width: 90%;
             max-width: 800px;
@@ -262,7 +314,7 @@
         .modal-header {
             margin-bottom: 20px;
         }
-        .modal-body {
+         .modal-body {
             margin-bottom: 20px;
         }
         .modal-footer {
@@ -274,12 +326,12 @@
         .form-group {
             margin-bottom: 20px;
         }
-        form-group label {
+        .form-group label {
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
         }
-        .form-control {
+         .form-control {
             width: 100%;
             padding: 12px;
             background-color: var(--secondary-bg);
@@ -291,7 +343,34 @@
             min-height: 120px;
             resize: vertical;
         }
-        /* Footer */
+        
+ /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+         /* Footer */
         footer {
             background-color: var(--secondary-bg);
             padding: 40px 0;
@@ -307,9 +386,17 @@
             color: var(--text-color);
             font-size: 20px;
             transition: color 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--card-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-     .social-links a:hover {
+        .social-links a:hover {
             color: var(--accent-color);
+            transform: translateY(-3px);
         }
         .copyright {
             color: var(--text-muted);
@@ -317,24 +404,33 @@
         }
         /* Responsive Design */
         @media (max-width: 768px) {
-            .about-content {
+            .about-content, .contact-content {
                 grid-template-columns: 1fr;
             }
-            .skills-grid {
+        .skills-grid {
                 grid-template-columns: 1fr;
             }
-            .hero h1 {
+            
+.hero h1 {
                 font-size: 36px;
             }
-            .hero h2 {
+            
+.hero h2 {
                 font-size: 20px;
             }
-             nav ul {
+            
+nav ul {
                 flex-direction: column;
                 gap: 10px;
             }
-            nav ul li {
+ nav ul li {
                 margin-left: 0;
+            }
+            
+ .portfolio-header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
             }
         }
     </style>
@@ -358,15 +454,15 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="profile-container">
-                <img src="https://github.com/veronicalydia505-hue/Personal-Portfolio-Resume-Website/blob/04db25043466c2bfc613897741d76e4cbc023715/Screenshot%202025-11-27%20221045.png&auto=format&fit=crop&w=500&q=80" alt="Nurul Hidayu" class="profile-pic">
+                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Nurul Hidayu" class="profile-pic">
             </div>
             <h1>Nurul Hidayu</h1>
             <h2>Multimedia Computing Student & UI/UX Designer</h2>
-            <p>Third-year Bachelor of Multimedia Computing student at Universiti Malaysia Sarawak (UNIMAS), skilled in Java, Python, HTML/CSS, and UI/UX design.</p>
+            <p>Third-year Bachelor of Multimedia Computing student at Universiti Malaysia Sarawak (UNIMAS), skilled in Java, Python, HTML/CSS, and UI/UX design. A motivated, fast-learning, and creative individual with strong teamwork and communication skills.</p>
             <a href="#portfolio" class="btn">View My Work</a>
         </div>
     </section>
-<!-- About Section -->
+ <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-title">
@@ -375,8 +471,11 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>My Expertise</h3>
-                    <p>A motivated, fast-learning, and creative individual with strong teamwork and communication skills. Seeking an internship opportunity to apply technical and design expertise in real-world projects.</p>
+                    <p>A motivated, fast-learning, and creative individual with strong teamwork and communication skills. Seeking an internship opportunity to apply technical and design expertise in real-world projects at Sarawak Energy or within related technology fields.</p>
                     <p>Skilled in Java, Python, HTML/CSS, and UI/UX design with experience in various tools and technologies.</p>
+<h3 style="margin-top: 30px;">Education</h3>
+                    <p><strong>Bachelor of Multimedia Computing (Hons)</strong><br>Universiti Malaysia Sarawak (UNIMAS)</p>
+                    <p><strong>Foundation in Life Science (Pre-University)</strong><br>Universiti Malaysia Sarawak (UNIMAS)</p>
                 </div>
                 <div class="skills">
                     <h3>My Skills</h3>
@@ -405,6 +504,18 @@
                                 <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
+                        <div class="skill-item">
+                            <h4>JavaScript <span>80%</span></h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Figma <span>85%</span></h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -413,10 +524,15 @@
 <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <div class="section-title">
-                <h2>My Portfolio</h2>
+            <div class="portfolio-header">
+                <div class="section-title" style="margin-bottom: 0;">
+                    <h2>My Portfolio</h2>
+                </div>
+                <button class="add-project-btn" onclick="openAddModal()">
+                    <i class="fas fa-plus"></i>
+                </button>
             </div>
-            <div class="portfolio-grid">
+            <div class="portfolio-grid" id="portfolioGrid">
                 <!-- Project 1 -->
                 <div class="portfolio-item">
                     <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mental Health App" class="portfolio-img">
@@ -429,9 +545,9 @@
                         </div>
                     </div>
                 </div>
-                 <!-- Project 2 -->
+                <!-- Project 2 -->
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="ART Mobile App" class="portfolio-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="ART Mobile App" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3>ART Mobile App Prototype</h3>
                         <p>Created a high-fidelity mobile app prototype to support the Sarawak Metro ART system.</p>
@@ -443,7 +559,7 @@
                 </div>
                 <!-- Project 3 -->
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Car Rental Website" class="portfolio-img">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Car Rental Website" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3>Car Rental Management Website</h3>
                         <p>Built a functional car rental website "ZoomRentals" with booking, listing, and admin management features.</p>
@@ -456,20 +572,57 @@
             </div>
         </div>
     </section>
-    <!-- Contact Section -->
+<!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title">
                 <h2>Contact Me</h2>
             </div>
-            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
-                <p>Feel free to reach out for collaboration or internship opportunities.</p>
-                <div style="margin-top: 30px;">
-                    <p><strong>Email:</strong> nurulhidayu1111@gmail.com</p>
-                    <p><strong>Phone:</strong> +60 193375235</p>
-                    <p><strong>Location:</strong> Kuching, Sarawak, Malaysia</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>3669, Lorong Sourabaya Indah 4D, 93050, Kuching, Sarawak, Malaysia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+60 193375235</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>nurulhidayu1111@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
-                <a href="mailto:nurulhidayu1111@gmail.com" class="btn" style="margin-top: 20px;">Send Email</a>
+                <div>
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm" style="margin-top: 20px;">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -477,10 +630,11 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
                 <a href="#"><i class="fab fa-behance"></i></a>
                 <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="copyright">
                 &copy; 2025 Nurul Hidayu. All Rights Reserved.
@@ -506,7 +660,7 @@
             </div>
         </div>
     </div>
-    <!-- Edit Project Modal -->
+<!-- Edit Project Modal -->
     <div id="editModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeEditModal()">&times;</span>
@@ -539,10 +693,42 @@
             </div>
         </div>
     </div>
-
+<!-- Add Project Modal -->
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeAddModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Add New Project</h2>
+            </div>
+            <div class="modal-body">
+                <form id="addProjectForm">
+                    <div class="form-group">
+                        <label for="addTitle">Project Title</label>
+                        <input type="text" id="addTitle" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="addDescription">Project Description</label>
+                        <textarea id="addDescription" class="form-control" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="addImage">Project Image URL</label>
+                        <input type="text" id="addImage" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="addDetails">Project Details</label>
+                        <textarea id="addDetails" class="form-control"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeAddModal()">Cancel</button>
+                <button class="btn" onclick="addNewProject()">Add Project</button>
+            </div>
+        </div>
+    </div>
 <script>
         // Project data
-        const projects = [
+        let projects = [
             {
                 title: "Mental Health Awareness Web App",
                 description: "Developed a web app promoting mental health awareness through interactive quizzes and educational content.",
@@ -552,20 +738,18 @@
             {
                 title: "ART Mobile App Prototype",
                 description: "Created a high-fidelity mobile app prototype to support the Sarawak Metro ART system.",
-                image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
                 details: "<p><strong>Technologies:</strong> Figma (UI/UX Design)</p><p>Designed user flows and interfaces, applying feedback from usability testing to improve the design.</p>"
             },
             {
                 title: "Car Rental Management Website",
                 description: "Built a functional car rental website 'ZoomRentals' with booking, listing, and admin management features.",
-                image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
                 details: "<p><strong>Technologies:</strong> HTML, PHP, MySQL</p><p>Implemented backend integration with MySQL for dynamic data handling.</p>"
             }
         ];
-
-        let currentProjectIndex = 0;
-
-        // Open project detail modal
+let currentProjectIndex = 0;
+// Open project detail modal
         function openProjectModal(index) {
             currentProjectIndex = index;
             const project = projects[index];
@@ -575,13 +759,11 @@
             document.getElementById('modalProjectDetails').innerHTML = project.details;
             document.getElementById('projectModal').style.display = 'flex';
         }
-
-        // Close project detail modal
+// Close project detail modal
         function closeProjectModal() {
             document.getElementById('projectModal').style.display = 'none';
         }
-
-        // Open edit project modal
+// Open edit project modal
         function openEditModal(index) {
             currentProjectIndex = index;
             const project = projects[index];
@@ -592,46 +774,94 @@
             document.getElementById('editModal').style.display = 'flex';
         }
 
-        // Close edit project modal
+ // Close edit project modal
         function closeEditModal() {
             document.getElementById('editModal').style.display = 'none';
         }
-
-        // Save project changes
+// Save project changes
         function saveProjectChanges() {
             projects[currentProjectIndex].title = document.getElementById('editTitle').value;
             projects[currentProjectIndex].description = document.getElementById('editDescription').value;
             projects[currentProjectIndex].image = document.getElementById('editImage').value;
             projects[currentProjectIndex].details = document.getElementById('editDetails').value;
-            
             // Update the portfolio item
-            const portfolioItems = document.querySelectorAll('.portfolio-item');
-            const item = portfolioItems[currentProjectIndex];
-            item.querySelector('h3').textContent = projects[currentProjectIndex].title;
-            item.querySelector('p').textContent = projects[currentProjectIndex].description;
-            item.querySelector('img').src = projects[currentProjectIndex].image;
-            
+            updatePortfolioItem(currentProjectIndex);
             closeEditModal();
             alert('Project updated successfully!');
         }
-
-        // Close modals when clicking outside
+// Open add project modal
+        function openAddModal() {
+            document.getElementById('addTitle').value = '';
+            document.getElementById('addDescription').value = '';
+            document.getElementById('addImage').value = '';
+            document.getElementById('addDetails').value = '';
+            document.getElementById('addModal').style.display = 'flex';
+        }
+// Close add project modal
+        function closeAddModal() {
+            document.getElementById('addModal').style.display = 'none';
+        }
+// Add new project
+        function addNewProject() {
+            const newProject = {
+                title: document.getElementById('addTitle').value,
+                description: document.getElementById('addDescription').value,
+                image: document.getElementById('addImage').value,
+                details: document.getElementById('addDetails').value
+            };
+            projects.push(newProject);
+            // Add the new project to the portfolio grid
+            addPortfolioItem(newProject, projects.length - 1);
+            closeAddModal();
+            alert('Project added successfully!');
+        }
+// Update portfolio item in the grid
+        function updatePortfolioItem(index) {
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            const item = portfolioItems[index];
+            const project = projects[index];
+            item.querySelector('h3').textContent = project.title;
+            item.querySelector('p').textContent = project.description;
+            item.querySelector('img').src = project.image;
+        }
+// Add new portfolio item to the grid
+        function addPortfolioItem(project, index) {
+            const portfolioGrid = document.getElementById('portfolioGrid');
+            const portfolioItem = document.createElement('div');
+            portfolioItem.className = 'portfolio-item';
+            portfolioItem.innerHTML = `<img src="${project.image}" alt="${project.title}" class="portfolio-img">
+<div class="portfolio-content">
+                    <h3>${project.title}</h3>
+                    <p>${project.description}</p>
+                    <div class="portfolio-actions">
+                        <button class="btn btn-small" onclick="openProjectModal(${index})">View Details</button>
+                        <button class="btn btn-small btn-outline" onclick="openEditModal(${index})">Edit</button>
+                    </div>
+                </div>
+            `;
+            portfolioGrid.appendChild(portfolioItem);
+        }
+// Close modals when clicking outside
         window.onclick = function(event) {
             const projectModal = document.getElementById('projectModal');
             const editModal = document.getElementById('editModal');
-            
+            const addModal = document.getElementById('addModal');
             if (event.target === projectModal) {
                 closeProjectModal();
             }
-            
             if (event.target === editModal) {
                 closeEditModal();
             }
+            if (event.target === addModal) {
+                closeAddModal();
+            }
         }
+// Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
     </script>
-    
-    <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
-                            
