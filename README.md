@@ -454,10 +454,7 @@ nav ul {
     <section id="home" class="hero">
         <div class="container">
             <div class="profile-container">
-                <img src="uploaded:Screenshot 2025-11-28 191533.png-3f9a7fc3-b53f-42c4-a608-f7b7e3c751fc" 
-     onerror="this.onerror=null;this.src='https://placehold.co/150x150/EC4899/030712?text=NH'" 
-     alt="Profile Photo" 
-     class="w-48 h-48 object-cover rounded-full mx-auto mb-6 border-4 border-indigo-500 shadow-2xl transition-transform duration-300 hover:scale-105">
+                <img src="https://github.com/veronicalydia505-hue/Personal-Portfolio-Resume-Website/blob/main/Screenshot%202025-11-27%20221045.png" width="400" height="400" alt"Screenshot 2025-11-27 221045.png">
         </div>
             <h1>Nurul Hidayu</h1>
             <h2>Multimedia Computing Student & UI/UX Designer</h2>
