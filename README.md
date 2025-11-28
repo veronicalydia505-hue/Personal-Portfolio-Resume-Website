@@ -595,7 +595,7 @@ nav ul {
                         </div>
                         <div>
                             <h3>Location</h3>
-                            <p>3669, Lorong Sourabaya Indah 4D, 93050, Kuching, Sarawak, Malaysia</p>
+                            <p>Kuching, Sarawak, Malaysia</p>
                         </div>
                     </div>
                     <div class="contact-item">
