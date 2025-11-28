@@ -133,7 +133,7 @@
                             </button>
                         </div>
                         <p class="text-gray-300 mb-4 leading-relaxed">
-                            Currently pursuing a Bachelor of Multimedia Computing (Hons) at Universiti Malaysia Sarawak (UNIMAS). My academic journey has equipped me with strong foundational knowledge in programming languages like Java, Python, HTML/CSS, and Kotlin, complemented by expertise in **UI/UX design** using tools like Figma.
+                            Currently pursuing a Bachelor of Multimedia Computing (Hons) at Universiti Malaysia Sarawak (UNIMAS). My academic journey has equipped me with strong foundational knowledge in programming languages like Java, Python, HTML/CSS, and Kotlin, complemented by expertise in UI/UX design using tools like Figma.
                         </p>
                         <p class="text-gray-300 mb-6 leading-relaxed">
                             I thrive in team environments, focusing on effective communication and problem-solving to deliver high-quality, user-centric solutions.
