@@ -24,7 +24,7 @@
         html {
             scroll-behavior: smooth;
         }
-         body {
+        body {
             background-color: var(--primary-bg);
             color: var(--text-color);
             line-height: 1.6;
@@ -35,8 +35,7 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        
-/* Header Styles */
+        /* Header Styles */
         header {
             background-color: var(--secondary-bg);
             padding: 20px 0;
@@ -60,10 +59,10 @@
             display: flex;
             list-style: none;
         }
-         nav ul li {
+        nav ul li {
             margin-left: 30px;
         }
-         nav ul li a {
+        nav ul li a {
             color: var(--text-color);
             text-decoration: none;
             font-weight: 500;
@@ -115,7 +114,7 @@
             color: var(--accent-color);
             margin-bottom: 20px;
         }
-         .hero p {
+        .hero p {
             max-width: 600px;
             margin: 0 auto 30px;
             color: var(--text-muted);
@@ -137,8 +136,7 @@
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
         }
-        
-/* Section Styles */
+        /* Section Styles */
         section {
             padding: 100px 0;
         }
@@ -173,7 +171,7 @@
             font-size: 28px;
             margin-bottom: 20px;
         }
-         .about-text p {
+        .about-text p {
             margin-bottom: 20px;
             color: var(--text-muted);
         }
@@ -188,12 +186,14 @@
             border-radius: 10px;
             border-left: 4px solid var(--accent-color);
         }
-        .skill-item h4 {
+        
+.skill-item h4 {
             margin-bottom: 10px;
             display: flex;
             justify-content: space-between;
         }
-        .skill-bar {
+        
+.skill-bar {
             height: 8px;
             background-color: var(--secondary-bg);
             border-radius: 4px;
@@ -201,7 +201,7 @@
         }
         
 .skill-progress {
-    height: 100%;
+            height: 100%;
             background-color: var(--accent-color);
             border-radius: 4px;
         }
@@ -276,7 +276,7 @@
         .btn-outline:hover {
             background-color: var(--accent-color);
         }
-         /* Modal Styles */
+        /* Modal Styles */
         .modal {
             display: none;
             position: fixed;
@@ -289,8 +289,7 @@
             align-items: center;
             justify-content: center;
         }
-        
-.modal-content {
+        .modal-content {
             background-color: var(--card-bg);
             width: 90%;
             max-width: 800px;
@@ -314,7 +313,7 @@
         .modal-header {
             margin-bottom: 20px;
         }
-         .modal-body {
+        .modal-body {
             margin-bottom: 20px;
         }
         .modal-footer {
@@ -331,7 +330,7 @@
             margin-bottom: 8px;
             font-weight: 500;
         }
-         .form-control {
+        .form-control {
             width: 100%;
             padding: 12px;
             background-color: var(--secondary-bg);
@@ -339,23 +338,22 @@
             border-radius: 5px;
             color: var(--text-color);
         }
-        textarea.form-control {
+         textarea.form-control {
             min-height: 120px;
             resize: vertical;
         }
-        
- /* Contact Section */
+         /* Contact Section */
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
         }
-        .contact-info {
+         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
-        .contact-item {
+         .contact-item {
             display: flex;
             align-items: center;
             gap: 15px;
@@ -370,7 +368,7 @@
             justify-content: center;
             font-size: 20px;
         }
-         /* Footer */
+        /* Footer */
         footer {
             background-color: var(--secondary-bg);
             padding: 40px 0;
@@ -407,27 +405,24 @@
             .about-content, .contact-content {
                 grid-template-columns: 1fr;
             }
-        .skills-grid {
+            .skills-grid {
                 grid-template-columns: 1fr;
             }
-            
-.hero h1 {
+            .hero h1 {
                 font-size: 36px;
             }
             
-.hero h2 {
+ .hero h2 {
                 font-size: 20px;
             }
-            
-nav ul {
+             nav ul {
                 flex-direction: column;
                 gap: 10px;
             }
- nav ul li {
+            nav ul li {
                 margin-left: 0;
             }
-            
- .portfolio-header {
+            .portfolio-header {
                 flex-direction: column;
                 gap: 20px;
                 text-align: center;
@@ -454,15 +449,15 @@ nav ul {
     <section id="home" class="hero">
         <div class="container">
             <div class="profile-container">
-                <img src="<!-- Uploading "Screenshot 2025-11-27 221045.png".-->
-        </div>
+                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Nurul Hidayu" class="profile-pic">
+            </div>
             <h1>Nurul Hidayu</h1>
             <h2>Multimedia Computing Student & UI/UX Designer</h2>
             <p>Third-year Bachelor of Multimedia Computing student at Universiti Malaysia Sarawak (UNIMAS), skilled in Java, Python, HTML/CSS, and UI/UX design. A motivated, fast-learning, and creative individual with strong teamwork and communication skills.</p>
             <a href="#portfolio" class="btn">View My Work</a>
         </div>
     </section>
- <!-- About Section -->
+<!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-title">
@@ -473,9 +468,14 @@ nav ul {
                     <h3>My Expertise</h3>
                     <p>A motivated, fast-learning, and creative individual with strong teamwork and communication skills. Seeking an internship opportunity to apply technical and design expertise in real-world projects at Sarawak Energy or within related technology fields.</p>
                     <p>Skilled in Java, Python, HTML/CSS, and UI/UX design with experience in various tools and technologies.</p>
-<h3 style="margin-top: 30px;">Education</h3>
-                    <p><strong>Bachelor of Multimedia Computing (Hons)</strong><br>Universiti Malaysia Sarawak (UNIMAS)</p>
-                    <p><strong>Foundation in Life Science (Pre-University)</strong><br>Universiti Malaysia Sarawak (UNIMAS)</p>
+                    <h3 style="margin-top: 30px;">Education</h3>
+                    <div id="education-list">
+                        <p><strong>Bachelor of Multimedia Computing (Hons)</strong><br>Universiti Malaysia Sarawak (UNIMAS)</p>
+                        <p><strong>Foundation in Life Science (Pre-University)</strong><br>Universiti Malaysia Sarawak (UNIMAS)</p>
+                    </div>
+                    <button class="btn btn-outline" style="margin-top: 15px;" onclick="openAddEducationModal()">
+                        <i class="fas fa-plus"></i> Add Education
+                    </button>
                 </div>
                 <div class="skills">
                     <h3>My Skills</h3>
@@ -521,7 +521,7 @@ nav ul {
             </div>
         </div>
     </section>
-<!-- Portfolio Section -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="portfolio-header">
@@ -726,6 +726,35 @@ nav ul {
             </div>
         </div>
     </div>
+<!-- Add Education Modal -->
+    <div id="addEducationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeAddEducationModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Add Education</h2>
+            </div>
+            <div class="modal-body">
+                <form id="addEducationForm">
+                    <div class="form-group">
+                        <label for="educationTitle">Degree/Program</label>
+                        <input type="text" id="educationTitle" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="educationInstitution">Institution</label>
+                        <input type="text" id="educationInstitution" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="educationYear">Year/Duration</label>
+                        <input type="text" id="educationYear" class="form-control" placeholder="e.g., 2020-2023">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" onclick="closeAddEducationModal()">Cancel</button>
+                <button class="btn" onclick="addNewEducation()">Add Education</button>
+            </div>
+        </div>
+    </div>
 <script>
         // Project data
         let projects = [
@@ -758,12 +787,11 @@ let currentProjectIndex = 0;
             document.getElementById('modalProjectDescription').textContent = project.description;
             document.getElementById('modalProjectDetails').innerHTML = project.details;
             document.getElementById('projectModal').style.display = 'flex';
-        }
-// Close project detail modal
+        }// Close project detail modal
         function closeProjectModal() {
             document.getElementById('projectModal').style.display = 'none';
         }
-// Open edit project modal
+/ Open edit project modal
         function openEditModal(index) {
             currentProjectIndex = index;
             const project = projects[index];
@@ -773,8 +801,7 @@ let currentProjectIndex = 0;
             document.getElementById('editDetails').value = project.details.replace(/<[^>]*>/g, '');
             document.getElementById('editModal').style.display = 'flex';
         }
-
- // Close edit project modal
+// Close edit project modal
         function closeEditModal() {
             document.getElementById('editModal').style.display = 'none';
         }
@@ -789,6 +816,7 @@ let currentProjectIndex = 0;
             closeEditModal();
             alert('Project updated successfully!');
         }
+
 // Open add project modal
         function openAddModal() {
             document.getElementById('addTitle').value = '';
@@ -797,10 +825,12 @@ let currentProjectIndex = 0;
             document.getElementById('addDetails').value = '';
             document.getElementById('addModal').style.display = 'flex';
         }
+
 // Close add project modal
         function closeAddModal() {
             document.getElementById('addModal').style.display = 'none';
         }
+
 // Add new project
         function addNewProject() {
             const newProject = {
@@ -815,6 +845,32 @@ let currentProjectIndex = 0;
             closeAddModal();
             alert('Project added successfully!');
         }
+
+// Open add education modal
+        function openAddEducationModal() {
+            document.getElementById('educationTitle').value = '';
+            document.getElementById('educationInstitution').value = '';
+            document.getElementById('educationYear').value = '';
+            document.getElementById('addEducationModal').style.display = 'flex';
+        }
+
+// Close add education modal
+        function closeAddEducationModal() {
+            document.getElementById('addEducationModal').style.display = 'none';
+        }
+
+// Add new education
+        function addNewEducation() {
+            const title = document.getElementById('educationTitle').value;
+            const institution = document.getElementById('educationInstitution').value;
+            const year = document.getElementById('educationYear').value;
+            const educationItem = document.createElement('p');
+            educationItem.innerHTML = `<strong>${title}</strong><br>${institution}${year ? ` (${year})` : ''}`;
+            document.getElementById('education-list').appendChild(educationItem);
+            closeAddEducationModal();
+            alert('Education added successfully!');
+        }
+
 // Update portfolio item in the grid
         function updatePortfolioItem(index) {
             const portfolioItems = document.querySelectorAll('.portfolio-item');
@@ -829,7 +885,8 @@ let currentProjectIndex = 0;
             const portfolioGrid = document.getElementById('portfolioGrid');
             const portfolioItem = document.createElement('div');
             portfolioItem.className = 'portfolio-item';
-            portfolioItem.innerHTML = `<img src="${project.image}" alt="${project.title}" class="portfolio-img">
+            portfolioItem.innerHTML = `
+            <img src="${project.image}" alt="${project.title}" class="portfolio-img">
 <div class="portfolio-content">
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
@@ -841,11 +898,13 @@ let currentProjectIndex = 0;
             `;
             portfolioGrid.appendChild(portfolioItem);
         }
+
 // Close modals when clicking outside
         window.onclick = function(event) {
             const projectModal = document.getElementById('projectModal');
             const editModal = document.getElementById('editModal');
             const addModal = document.getElementById('addModal');
+            const addEducationModal = document.getElementById('addEducationModal');
             if (event.target === projectModal) {
                 closeProjectModal();
             }
@@ -854,6 +913,9 @@ let currentProjectIndex = 0;
             }
             if (event.target === addModal) {
                 closeAddModal();
+            }
+            if (event.target === addEducationModal) {
+                closeAddEducationModal();
             }
         }
 // Contact form submission
