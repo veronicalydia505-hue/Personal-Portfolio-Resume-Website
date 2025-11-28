@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -913,4 +912,4 @@ textarea.form-control {
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4
+                    
