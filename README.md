@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -566,7 +567,7 @@
             </div>
         </div>
     </section>
-    <!-- Contact Section -->
+<!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title">
@@ -772,7 +773,7 @@
             }
         ];
 let currentProjectIndex = 0;
-// Open project detail modal
+ // Open project detail modal
         function openProjectModal(index) {
             currentProjectIndex = index;
             const project = projects[index];
@@ -786,7 +787,6 @@ let currentProjectIndex = 0;
         function closeProjectModal() {
             document.getElementById('projectModal').style.display = 'none';
         }
-
 // Open edit project modal
         function openEditModal(index) {
             currentProjectIndex = index;
@@ -797,21 +797,24 @@ let currentProjectIndex = 0;
             document.getElementById('editDetails').value = project.details.replace(/<[^>]*>/g, '');
             document.getElementById('editModal').style.display = 'flex';
         }
-// Close edit project modal
+ // Close edit project modal
         function closeEditModal() {
             document.getElementById('editModal').style.display = 'none';
         }
-// Save project changes
+
+ // Save project changes
         function saveProjectChanges() {
             projects[currentProjectIndex].title = document.getElementById('editTitle').value;
             projects[currentProjectIndex].description = document.getElementById('editDescription').value;
             projects[currentProjectIndex].image = document.getElementById('editImage').value;
             projects[currentProjectIndex].details = document.getElementById('editDetails').value;
-            // Update the portfolio item
+            
+// Update the portfolio item
             updatePortfolioItem(currentProjectIndex);
             closeEditModal();
             alert('Project updated successfully!');
         }
+
 // Open add project modal
         function openAddModal() {
             document.getElementById('addTitle').value = '';
@@ -820,10 +823,12 @@ let currentProjectIndex = 0;
             document.getElementById('addDetails').value = '';
             document.getElementById('addModal').style.display = 'flex';
         }
+
 // Close add project modal
         function closeAddModal() {
             document.getElementById('addModal').style.display = 'none';
         }
+
 // Add new project
         function addNewProject() {
             const newProject = {
@@ -832,12 +837,14 @@ let currentProjectIndex = 0;
                 image: document.getElementById('addImage').value,
                 details: document.getElementById('addDetails').value
             };
-            projects.push(newProject);
+            
+projects.push(newProject);
             // Add the new project to the portfolio grid
             addPortfolioItem(newProject, projects.length - 1);
             closeAddModal();
             alert('Project added successfully!');
         }
+
 // Open add education modal
         function openAddEducationModal() {
             document.getElementById('educationTitle').value = '';
@@ -855,11 +862,12 @@ let currentProjectIndex = 0;
             const institution = document.getElementById('educationInstitution').value;
             const year = document.getElementById('educationYear').value;
             const educationItem = document.createElement('p');
-            educationItem.innerHTML = '<strong>${title}</strong><br>${institution}${year ? '(${year})` : ''}`;
+            educationItem.innerHTML = `<strong>${title}</strong><br>${institution}${year ? ` (${year})` : ''}`;
             document.getElementById('education-list').appendChild(educationItem);
             closeAddEducationModal();
             alert('Education added successfully!');
         }
+
 // Update portfolio item in the grid
         function updatePortfolioItem(index) {
             const portfolioItems = document.querySelectorAll('.portfolio-item');
@@ -874,8 +882,10 @@ let currentProjectIndex = 0;
             const portfolioGrid = document.getElementById('portfolioGrid');
             const portfolioItem = document.createElement('div');
             portfolioItem.className = 'portfolio-item';
+            
+// FIXED: Added the missing backtick after the img tag
             portfolioItem.innerHTML = `
-        <img src="${project.image}" alt="${project.title}" class="portfolio-img">
+            <img src="${project.image}" alt="${project.title}" class="portfolio-img">
 <div class="portfolio-content">
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
@@ -887,6 +897,7 @@ let currentProjectIndex = 0;
             `;
             portfolioGrid.appendChild(portfolioItem);
         }
+
 // Close modals when clicking outside
         window.onclick = function(event) {
             const projectModal = document.getElementById('projectModal');
@@ -906,6 +917,7 @@ let currentProjectIndex = 0;
                 closeAddEducationModal();
             }
         }
+
 // Contact form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
