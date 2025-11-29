@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -441,8 +440,7 @@
             </nav>
         </div>
     </header>
- Hero Section -->
-    <section id="home" class="hero">
+<section id="home" class="hero">
         <div class="container">
             <div class="profile-container">
                 <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" alt="Nurul Hidayu" class="profile-pic">
