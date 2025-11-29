@@ -756,174 +756,167 @@
         </div>
     </div>
 <script>
-        // Project data
-        let projects = [
-            {
-                title: "Mental Health Awareness Web App",
-                description: "Developed a web app promoting mental health awareness through interactive quizzes and educational content.",
-                image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-                details: "<p><strong>Technologies:</strong> Java, HTML, CSS, MySQL</p><p>Designed user interfaces and managed backend operations using Java and MySQL.</p>"
-            },
-            {
-                title: "ART Mobile App Prototype",
-                description: "Created a high-fidelity mobile app prototype to support the Sarawak Metro ART system.",
-                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-                details: "<p><strong>Technologies:</strong> Figma (UI/UX Design)</p><p>Designed user flows and interfaces, applying feedback from usability testing to improve the design.</p>"
-            },
-            {
-                title: "Car Rental Management Website",
-                description: "Built a functional car rental website 'ZoomRentals' with booking, listing, and admin management features.",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-                details: "<p><strong>Technologies:</strong> HTML, PHP, MySQL</p><p>Implemented backend integration with MySQL for dynamic data handling.</p>"
-            }
-        ];
+    // Project data
+    let projects = [
+        {
+            title: "Mental Health Awareness Web App",
+            description: "Developed a web app promoting mental health awareness through interactive quizzes and educational content.",
+            image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+            details: "<p><strong>Technologies:</strong> Java, HTML, CSS, MySQL</p><p>Designed user interfaces and managed backend operations using Java and MySQL.</p>"
+        },
+        {
+            title: "ART Mobile App Prototype",
+            description: "Created a high-fidelity mobile app prototype to support the Sarawak Metro ART system.",
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+            details: "<p><strong>Technologies:</strong> Figma (UI/UX Design)</p><p>Designed user flows and interfaces, applying feedback from usability testing to improve the design.</p>"
+        },
+        {
+            title: "Car Rental Management Website",
+            description: "Built a functional car rental website 'ZoomRentals' with booking, listing, and admin management features.",
+            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+            details: "<p><strong>Technologies:</strong> HTML, PHP, MySQL</p><p>Implemented backend integration with MySQL for dynamic data handling.</p>"
+        }
+    ];
 let currentProjectIndex = 0;
 // Open project detail modal
-        function openProjectModal(index) {
-            currentProjectIndex = index;
-            const project = projects[index];
-            document.getElementById('modalProjectTitle').textContent = project.title;
-            document.getElementById('modalProjectImage').src = project.image;
-            document.getElementById('modalProjectDescription').textContent = project.description;
-            document.getElementById('modalProjectDetails').innerHTML = project.details;
-            document.getElementById('projectModal').style.display = 'flex';
-        }// Close project detail modal
-        function closeProjectModal() {
-            document.getElementById('projectModal').style.display = 'none';
-        }
-/ Open edit project modal
-        function openEditModal(index) {
-            currentProjectIndex = index;
-            const project = projects[index];
-            document.getElementById('editTitle').value = project.title;
-            document.getElementById('editDescription').value = project.description;
-            document.getElementById('editImage').value = project.image;
-            document.getElementById('editDetails').value = project.details.replace(/<[^>]*>/g, '');
-            document.getElementById('editModal').style.display = 'flex';
-        }
+    function openProjectModal(index) {
+        currentProjectIndex = index;
+        const project = projects[index];
+        document.getElementById('modalProjectTitle').textContent = project.title;
+        document.getElementById('modalProjectImage').src = project.image;
+        document.getElementById('modalProjectDescription').textContent = project.description;
+        document.getElementById('modalProjectDetails').innerHTML = project.details;
+        document.getElementById('projectModal').style.display = 'flex';
+    }
+// Close project detail modal
+    function closeProjectModal() {
+        document.getElementById('projectModal').style.display = 'none';
+    }
+// Open edit project modal
+    function openEditModal(index) {
+        currentProjectIndex = index;
+        const project = projects[index];
+        document.getElementById('editTitle').value = project.title;
+        document.getElementById('editDescription').value = project.description;
+        document.getElementById('editImage').value = project.image;
+        document.getElementById('editDetails').value = project.details.replace(/<[^>]*>/g, '');
+        document.getElementById('editModal').style.display = 'flex';
+    }
 // Close edit project modal
-        function closeEditModal() {
-            document.getElementById('editModal').style.display = 'none';
-        }
+    function closeEditModal() {
+        document.getElementById('editModal').style.display = 'none';
+    }
 // Save project changes
-        function saveProjectChanges() {
-            projects[currentProjectIndex].title = document.getElementById('editTitle').value;
-            projects[currentProjectIndex].description = document.getElementById('editDescription').value;
-            projects[currentProjectIndex].image = document.getElementById('editImage').value;
-            projects[currentProjectIndex].details = document.getElementById('editDetails').value;
-            // Update the portfolio item
-            updatePortfolioItem(currentProjectIndex);
-            closeEditModal();
-            alert('Project updated successfully!');
-        }
-
+    function saveProjectChanges() {
+        projects[currentProjectIndex].title = document.getElementById('editTitle').value;
+        projects[currentProjectIndex].description = document.getElementById('editDescription').value;
+        projects[currentProjectIndex].image = document.getElementById('editImage').value;
+        projects[currentProjectIndex].details = document.getElementById('editDetails').value;
+        // Update the portfolio item
+        updatePortfolioItem(currentProjectIndex);
+        closeEditModal();
+        alert('Project updated successfully!');
+    }
 // Open add project modal
-        function openAddModal() {
-            document.getElementById('addTitle').value = '';
-            document.getElementById('addDescription').value = '';
-            document.getElementById('addImage').value = '';
-            document.getElementById('addDetails').value = '';
-            document.getElementById('addModal').style.display = 'flex';
-        }
-
+    function openAddModal() {
+        document.getElementById('addTitle').value = '';
+        document.getElementById('addDescription').value = '';
+        document.getElementById('addImage').value = '';
+        document.getElementById('addDetails').value = '';
+        document.getElementById('addModal').style.display = 'flex';
+    }
 // Close add project modal
-        function closeAddModal() {
-            document.getElementById('addModal').style.display = 'none';
-        }
-
+    function closeAddModal() {
+        document.getElementById('addModal').style.display = 'none';
+    }
 // Add new project
-        function addNewProject() {
-            const newProject = {
-                title: document.getElementById('addTitle').value,
-                description: document.getElementById('addDescription').value,
-                image: document.getElementById('addImage').value,
-                details: document.getElementById('addDetails').value
-            };
-            projects.push(newProject);
-            // Add the new project to the portfolio grid
-            addPortfolioItem(newProject, projects.length - 1);
-            closeAddModal();
-            alert('Project added successfully!');
-        }
-
-// Open add education modal
-        function openAddEducationModal() {
-            document.getElementById('educationTitle').value = '';
-            document.getElementById('educationInstitution').value = '';
-            document.getElementById('educationYear').value = '';
-            document.getElementById('addEducationModal').style.display = 'flex';
-        }
-
+    function addNewProject() {
+        const newProject = {
+            title: document.getElementById('addTitle').value,
+            description: document.getElementById('addDescription').value,
+            image: document.getElementById('addImage').value,
+            details: document.getElementById('addDetails').value
+        };
+        projects.push(newProject);
+        // Add the new project to the portfolio grid
+        addPortfolioItem(newProject, projects.length - 1);
+        closeAddModal();
+        alert('Project added successfully!');
+    }
+ // Open add education modal
+    function openAddEducationModal() {
+        document.getElementById('educationTitle').value = '';
+        document.getElementById('educationInstitution').value = '';
+        document.getElementById('educationYear').value = '';
+        document.getElementById('addEducationModal').style.display = 'flex';
+    }
 // Close add education modal
-        function closeAddEducationModal() {
-            document.getElementById('addEducationModal').style.display = 'none';
-        }
+    function closeAddEducationModal() {
+        document.getElementById('addEducationModal').style.display = 'none';
+    }
 
-// Add new education
-        function addNewEducation() {
-            const title = document.getElementById('educationTitle').value;
-            const institution = document.getElementById('educationInstitution').value;
-            const year = document.getElementById('educationYear').value;
-            const educationItem = document.createElement('p');
-            educationItem.innerHTML = `<strong>${title}</strong><br>${institution}${year ? ` (${year})` : ''}`;
-            document.getElementById('education-list').appendChild(educationItem);
-            closeAddEducationModal();
-            alert('Education added successfully!');
-        }
-
+/ Add new education
+    function addNewEducation() {
+        const title = document.getElementById('educationTitle').value;
+        const institution = document.getElementById('educationInstitution').value;
+        const year = document.getElementById('educationYear').value;
+        const educationItem = document.createElement('p');
+        educationItem.innerHTML = `<strong>${title}</strong><br>${institution}${year ? ` (${year})` : ''}`;
+        document.getElementById('education-list').appendChild(educationItem);
+        closeAddEducationModal();
+        alert('Education added successfully!');
+    }
 // Update portfolio item in the grid
-        function updatePortfolioItem(index) {
-            const portfolioItems = document.querySelectorAll('.portfolio-item');
-            const item = portfolioItems[index];
-            const project = projects[index];
-            item.querySelector('h3').textContent = project.title;
-            item.querySelector('p').textContent = project.description;
-            item.querySelector('img').src = project.image;
-        }
+    function updatePortfolioItem(index) {
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        const item = portfolioItems[index];
+        const project = projects[index];
+        item.querySelector('h3').textContent = project.title;
+        item.querySelector('p').textContent = project.description;
+        item.querySelector('img').src = project.image;
+    }
 // Add new portfolio item to the grid
-        function addPortfolioItem(project, index) {
-            const portfolioGrid = document.getElementById('portfolioGrid');
-            const portfolioItem = document.createElement('div');
-            portfolioItem.className = 'portfolio-item';
-            portfolioItem.innerHTML = `
-            <img src="${project.image}" alt="${project.title}" class="portfolio-img">
+    function addPortfolioItem(project, index) {
+        const portfolioGrid = document.getElementById('portfolioGrid');
+        const portfolioItem = document.createElement('div');
+        portfolioItem.className = 'portfolio-item';
+        portfolioItem.innerHTML = `<img src="${project.image}" alt="${project.title}" class="portfolio-img">
 <div class="portfolio-content">
-                    <h3>${project.title}</h3>
-                    <p>${project.description}</p>
-                    <div class="portfolio-actions">
-                        <button class="btn btn-small" onclick="openProjectModal(${index})">View Details</button>
-                        <button class="btn btn-small btn-outline" onclick="openEditModal(${index})">Edit</button>
-                    </div>
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <div class="portfolio-actions">
+                    <button class="btn btn-small" onclick="openProjectModal(${index})">View Details</button>
+                    <button class="btn btn-small btn-outline" onclick="openEditModal(${index})">Edit</button>
                 </div>
-            `;
-            portfolioGrid.appendChild(portfolioItem);
-        }
-
+            </div>
+        `;
+        portfolioGrid.appendChild(portfolioItem);
+    }
 // Close modals when clicking outside
-        window.onclick = function(event) {
-            const projectModal = document.getElementById('projectModal');
-            const editModal = document.getElementById('editModal');
-            const addModal = document.getElementById('addModal');
-            const addEducationModal = document.getElementById('addEducationModal');
-            if (event.target === projectModal) {
-                closeProjectModal();
-            }
-            if (event.target === editModal) {
-                closeEditModal();
-            }
-            if (event.target === addModal) {
-                closeAddModal();
-            }
-            if (event.target === addEducationModal) {
-                closeAddEducationModal();
-            }
+    window.onclick = function(event) {
+        const projectModal = document.getElementById('projectModal');
+        const editModal = document.getElementById('editModal');
+        const addModal = document.getElementById('addModal');
+        const addEducationModal = document.getElementById('addEducationModal');
+        if (event.target === projectModal) {
+            closeProjectModal();
         }
+        if (event.target === editModal) {
+            closeEditModal();
+        }
+        if (event.target === addModal) {
+            closeAddModal();
+        }
+        if (event.target === addEducationModal) {
+            closeAddEducationModal();
+        }
+    }
 // Contact form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
-    </script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! I will get back to you soon.');
+        this.reset();
+    });
+</script>
 </body>
 </html>
