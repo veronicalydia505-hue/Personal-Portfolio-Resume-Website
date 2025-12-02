@@ -31,7 +31,7 @@
         }
         .container {
             max-width: 100%;
-            margin: 0 auto;
+            margin: 1200px;
             padding: 0 20px;
         }
         /* Scroll Animation */
