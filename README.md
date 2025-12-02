@@ -919,20 +919,18 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-behance"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="copyright">
-                &copy; 2025 Nurul Hidayu. All Rights Reserved.
-            </div>
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
         </div>
-    </footer>
+        <div class="copyright">
+            &copy; 2025 Nurul Hidayu. All Rights Reserved.
+        </div>
+    </div>
+</footer>
     <!-- Project Detail Modal -->
     <div id="projectModal" class="modal">
         <div class="modal-content">
