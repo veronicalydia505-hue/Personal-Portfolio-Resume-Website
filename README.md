@@ -18,7 +18,6 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         html {
@@ -31,7 +30,7 @@
             overflow-x: hidden;
         }
         .container {
-            max-width: 1920px;
+            max-width: 100%;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -710,7 +709,7 @@
         </div>
         <h1>Nurul Hidayu</h1>
         <h2>Multimedia Computing Student & UI/UX Designer</h2>
-        <p>Third-year Bachelor of Multimedia Computing student at Universiti Malaysia Sarawak (UNIMAS), skilled in Java, Python, HTML/CSS, and UI/UX design. A motivated, fast-learning, and creative individual with strong teaamwork and communication skill.
+        <p>Third-year Bachelor of Multimedia Computing student at Universiti Malaysia Sarawak (UNIMAS), skilled in Java, Python, HTML/CSS, and UI/UX design. A motivated, fast-learning, and creative individual with strong teaamwork and communication skill.</p>
         <a href="#portfolio" class="btn">View My Work</a>
     <!-- About Section -->
     <section id="about" class="about">
