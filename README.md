@@ -619,41 +619,6 @@
             gap: 20px;
             margin-bottom: 20px;
         }
-        .social-links a {
-            color: var(--text-color);
-            font-size: 20px;
-            transition: all 0.3s ease;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: var(--card-bg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .social-links a::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, var(--accent-color), var(--accent-light));
-            opacity: 0;
-            transition: opacity 0.3s;
-            border-radius: 50%;
-        }
-        .social-links a:hover::before {
-            opacity: 1;
-        }
-        .social-links a i {
-            position: relative;
-            z-index: 1;
-        }
-        .social-links a:hover {
-            color: white;
-            transform: translateY(-5px) rotate(10deg);
-        }
         .copyright {
             color: var(--text-muted);
             font-size: 14px;
@@ -922,10 +887,6 @@
     <!-- Footer -->
 <footer>
     <div class="container">
-        <div class="social-links">
-            <a href="#"><i class="fab fa-behance"></i></a>
-            <a href="#"><i class="fab fa-dribbble"></i></a>
-        </div>
         <div class="copyright">
             &copy; 2025 Nurul Hidayu. All Rights Reserved.
         </div>
