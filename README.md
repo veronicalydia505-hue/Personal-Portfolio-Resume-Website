@@ -706,7 +706,7 @@
 <section id="home" class="hero">
     <div class="container">
         <div class="profile-container">
-           <img src="https://github.com/veronicalydia505-hue/Personal-Portfolio-Resume-Website/blob/main/profilepic.png" alt="Nurul Hidayu" class="profile-pic">
+           <img src="https://github.com/Personal-Portfolio-Resume-Website/blob/main/profilepic.png&auto=format&fit=crop&w=500&q=80" alt="Nurul Hidayu" class="portfolio-img">class="profile-pic">
         </div>
         <h1>Nurul Hidayu</h1>
         <h2>Multimedia Computing Student & UI/UX Designer</h2>
