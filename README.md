@@ -712,9 +712,7 @@
         <h2>Multimedia Computing Student & UI/UX Designer</h2>
         <p>Third-year Bachelor of Multimedia Computing student at Universiti Malaysia Sarawak (UNIMAS), skilled in Java, Python, HTML/CSS, and UI/UX design. A motivated, fast-learning, and creative individual with strong teaamwork and communication skill.
         <a href="#portfolio" class="btn">View My Work</a>
-    </div>
-</section>
-<!-- About Section -->
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-title fade-in">
@@ -1348,5 +1346,4 @@ let currentProjectIndex = 0;
         });// Initial check for scroll animations
         checkScroll();
     </script>
-</body>
-</html>
+
