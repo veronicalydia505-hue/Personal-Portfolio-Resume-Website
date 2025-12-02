@@ -706,9 +706,7 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="profile-container">
-               <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" 
-     alt="Nurul Hidayu" 
-     class="profile-pic">
+               <img src="profilepic.jpg" alt="Nurul Hidayu" class="profile-pic">
             <h1>Nurul Hidayu</h1>
             <h2>Multimedia Computing Student & UI/UX Designer</h2>
             <p>Third-year Bachelor of Multimedia Computing student at Universiti Malaysia Sarawak (UNIMAS), skilled in Java, Python, HTML/CSS, and UI/UX design. A motivated, fast-learning, and creative individual with strong teamwork and communication skills.</p>
