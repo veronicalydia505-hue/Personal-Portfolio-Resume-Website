@@ -702,17 +702,18 @@
     </header>
 <!-- Particles Container -->
     <div class="particles" id="particlesContainer"></div>
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="profile-container">
-               <img src="profilepic.jpg" alt="Nurul Hidayu" class="profile-pic">
-            <h1>Nurul Hidayu</h1>
-            <h2>Multimedia Computing Student & UI/UX Designer</h2>
-            <p>Third-year Bachelor of Multimedia Computing student at Universiti Malaysia Sarawak (UNIMAS), skilled in Java, Python, HTML/CSS, and UI/UX design. A motivated, fast-learning, and creative individual with strong teamwork and communication skills.</p>
-            <a href="#portfolio" class="btn">View My Work</a>
+   <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="profile-container">
+            <img src="profilepic.jpg" alt="Nurul Hidayu" class="profile-pic">
         </div>
-    </section>
+        <h1>Nurul Hidayu</h1>
+        <h2>Multimedia Computing Student & UI/UX Designer</h2>
+        <p>Third-year Bachelor of Multimedia Computing student at Universiti Malaysia Sarawak (UNIMAS), skilled in Java, Python, HTML/CSS, and UI/UX design. A motivated, fast-learning, and creative individual with strong teamwork and communication skills.</p>
+        <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+</section>
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
@@ -1341,5 +1342,4 @@ let currentProjectIndex = 0;
         });// Initial check for scroll animations
         checkScroll();
     </script>
-</body>
-</html>
+
