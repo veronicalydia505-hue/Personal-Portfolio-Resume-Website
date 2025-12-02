@@ -29,7 +29,6 @@
             color: var(--text-color);
             line-height: 1.6;
             overflow-x: hidden;
-            height: 100vh;
         }
         .container {
             max-width: 1920px;
@@ -379,6 +378,8 @@
         .add-project-btn::before {
             content: '';
             position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1%, transparent 1%);
@@ -473,7 +474,7 @@
         }
         /* Modal Styles */
         .modal {
-            display: none;
+            display: none; /* Controlled by JS */
             position: fixed;
             top: 0;
             left: 0;
@@ -484,6 +485,9 @@
             align-items: center;
             justify-content: center;
             animation: fadeIn 0.3s ease-out;
+        }
+        .modal.active {
+            display: flex;
         }
         @keyframes fadeIn {
             from {
@@ -626,6 +630,7 @@
             width: 100%;
             height: 4px;
             background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+            background-size: 500% 100%; /* For shimmer effect */
             animation: shimmer 3s infinite linear;
         }
         @keyframes shimmer {
@@ -682,7 +687,7 @@
             font-size: 16px;
             animation: fadeIn 2s ease;
         }
-        /* Particles Animation */
+        /* Particles Animation (Canvas implementation usually best, but simple CSS placeholders used here) */
         .particles {
             position: absolute;
             width: 100%;
@@ -715,7 +720,7 @@
                 padding: 0 30px;
             }
         }
-    @media (max-width: 992px) {
+        @media (max-width: 992px) {
             .about-content, .contact-content {
                 grid-template-columns: 1fr;
                 gap: 40px;
@@ -727,7 +732,8 @@
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
                 gap: 30px;
             }
-        }@media (max-width: 768px) {
+        }
+        @media (max-width: 768px) {
             .container {
                 padding: 0 20px;
             }
@@ -744,11 +750,10 @@
                 font-size: 36px;
             }
             nav ul {
-                flex-direction: column;
-                gap: 10px;
+               display: none; 
             }
-            nav ul li {
-                margin-left: 0;
+            .header-content {
+                justify-content: center; /* Center logo if nav is hidden */
             }
             .portfolio-header {
                 flex-direction: column;
@@ -785,15 +790,12 @@
         /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
-        }
-        ::-webkit-scrollbar-track {
+        }::-webkit-scrollbar-track {
             background: var(--secondary-bg);
-        }
-        ::-webkit-scrollbar-thumb {
+        }::-webkit-scrollbar-thumb {
             background: var(--accent-color);
             border-radius: 5px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
+        }::-webkit-scrollbar-thumb:hover {
             background: var(--accent-light);
         }
     </style>
